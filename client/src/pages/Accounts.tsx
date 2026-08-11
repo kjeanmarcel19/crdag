@@ -24,7 +24,12 @@ export default function Accounts() {
         name: account.type,
         iban: account.number,
         balance: account.balance,
-        type: index === 0 ? "primary" : index === 1 ? "savings" : "term",
+        type:
+          account.id === "cc"
+            ? "primary"
+            : account.id === "livret" || account.id === "livret-jeune"
+              ? "savings"
+              : "term",
         currency: "EUR",
       }))
     : accounts;
