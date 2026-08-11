@@ -226,7 +226,7 @@ export default function Payments() {
 
                 <div>
                   <label htmlFor="swift" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Code Swift / BIC</label>
-                  <input id="swift" type="text" required placeholder="Ex : BNPAFRPPXXX" value={swift} onChange={(event) => setSwift(event.target.value.toUpperCase())} className={`${inputClassName} font-mono`} />
+                  <input id="swift" type="text" required placeholder="Ex : CRLYFRPPXXX" value={swift} onChange={(event) => setSwift(event.target.value.toUpperCase())} className={`${inputClassName} font-mono`} />
                 </div>
 
                 <div>

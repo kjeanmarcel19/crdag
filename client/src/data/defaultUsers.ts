@@ -7109,8 +7109,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "id": "user_098",
     "identifiant": "1000000098",
     "codepersonnel": "101332",
-    "nom": "Fournier",
-    "prenom": "Maxime",
+    "nom": "Drome",
+    "prenom": "Frederic",
     "location": "France",
     "manager": "Marc Durand",
     "status": "Actif",
@@ -7120,21 +7120,21 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2298",
-        "balance": 877500,
+        "balance": 3500000,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5498",
-        "balance": 0,
+        "balance": 50000,
         "icon": "piggy-bank"
       },
       {
         "id": "plan",
-        "type": "Plan Épargne",
+        "type": "Livret Jeune",
         "number": "N°******8898",
-        "balance": 0,
+        "balance": 243000,
         "icon": "chart-line"
       }
     ],
@@ -7160,7 +7160,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
     ],
     "card": {
       "number": "4973 1200 8898 2298",
-      "holder": "Maxime Fournier",
+      "holder": "Frederic Drome",
       "expiry": "12/27",
       "isBlocked": false,
       "foreignPayments": true,
@@ -7168,13 +7168,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
+      "bankName": "Credit Agricole",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012398",
       "key": "10",
       "iban": "FR76 3000 4100 5435012398 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "CRLYFRPPXXX"
     }
   },
   {
