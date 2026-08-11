@@ -136,21 +136,21 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2201",
-        "balance": 998750,
+        "balance": 3500000,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5401",
-        "balance": 0,
+        "balance": 50000,
         "icon": "piggy-bank"
       },
       {
         "id": "plan",
         "type": "Plan Épargne",
         "number": "N°******8801",
-        "balance": 0,
+        "balance": 243000,
         "icon": "chart-line"
       }
     ],
