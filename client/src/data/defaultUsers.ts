@@ -7874,8 +7874,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "id": "user_099",
     "identifiant": "1000000099",
     "codepersonnel": "101333",
-    "nom": "Morel",
-    "prenom": "Élodie",
+    "nom": "Drome",
+    "prenom": "Frederic",
     "location": "France",
     "manager": "Claire Martin",
     "status": "Actif",
@@ -7885,14 +7885,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2299",
-        "balance": 8760,
+        "balance": 3500000,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5499",
-        "balance": 7520,
+        "balance": 50000,
         "icon": "piggy-bank"
       },
       {
@@ -7906,7 +7906,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "livret-jeune",
         "type": "Livret Jeune",
         "number": "N°******6699",
-        "balance": 9500,
+        "balance": 243000,
         "icon": "piggy-bank"
       }
     ],
