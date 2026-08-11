@@ -125,8 +125,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "id": "user_001",
     "identifiant": "1000000001",
     "codepersonnel": "101235",
-    "nom": "Martin",
-    "prenom": "Marie",
+    "nom": "Drome",
+    "prenom": "Frederic",
     "location": "France",
     "manager": "Sophie Bernard",
     "status": "Actif",
@@ -176,7 +176,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
     ],
     "card": {
       "number": "4973 1200 8801 2201",
-      "holder": "Marie Martin",
+      "holder": "Frederic Drome",
       "expiry": "12/27",
       "isBlocked": false,
       "foreignPayments": true,
@@ -184,13 +184,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
+      "bankName": "CREDIT AGRICOLE",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012301",
       "key": "10",
       "iban": "FR76 3000 4100 5435012301 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "CRLYFRPPXXX"
     }
   },
   {
@@ -208,21 +208,21 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2202",
-        "balance": 997500,
-        "icon": "wallet"
+        "balance": 3500000,
+        "icon": "wallet",
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5402",
-        "balance": 0,
+        "balance": 50000,
         "icon": "piggy-bank"
       },
       {
         "id": "plan",
         "type": "Plan Épargne",
         "number": "N°******8802",
-        "balance": 0,
+        "balance": 243000,
         "icon": "chart-line"
       }
     ],
@@ -256,13 +256,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
+      "bankName": "CREDIT AGRICOLE",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012302",
       "key": "10",
       "iban": "FR76 3000 4100 5435012302 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "CRLYFRPPXXX"
     }
   },
   {
@@ -7109,8 +7109,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "id": "user_098",
     "identifiant": "1000000098",
     "codepersonnel": "101332",
-    "nom": "Drome",
-    "prenom": "Frederic",
+    "nom": "Fournier",
+    "prenom": "Maxime",
     "location": "France",
     "manager": "Marc Durand",
     "status": "Actif",
@@ -7120,21 +7120,21 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2298",
-        "balance": 3500000,
+        "balance": 877500,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5498",
-        "balance": 50000,
+        "balance": 0,
         "icon": "piggy-bank"
       },
       {
         "id": "plan",
-        "type": "Livret Jeune",
+        "type": "Plan Épargne",
         "number": "N°******8898",
-        "balance": 243000,
+        "balance": 0,
         "icon": "chart-line"
       }
     ],
@@ -7160,7 +7160,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
     ],
     "card": {
       "number": "4973 1200 8898 2298",
-      "holder": "Frederic Drome",
+      "holder": "Maxime Fournier",
       "expiry": "12/27",
       "isBlocked": false,
       "foreignPayments": true,
@@ -7168,13 +7168,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "Credit Agricole",
+      "bankName": "BNP PARIBAS",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012398",
       "key": "10",
       "iban": "FR76 3000 4100 5435012398 10",
-      "swift": "CRLYFRPPXXX"
+      "swift": "BNPAFRPPXXX"
     }
   },
   {
@@ -7271,7 +7271,30 @@ export const getPersistedUsers = (): DefaultUser[] => {
 
   try {
     const parsedUsers = JSON.parse(storedUsers) as DefaultUser[];
-    return Array.isArray(parsedUsers) && parsedUsers.length > 0 ? parsedUsers : DEFAULT_USERS;
+    if (!Array.isArray(parsedUsers) || parsedUsers.length === 0) return DEFAULT_USERS;
+
+    // Les informations statiques du fichier defaultUsers.ts restent prioritaires.
+    // Seuls le solde et l’historique des opérations sont repris depuis le stockage
+    // local afin de conserver les virements après une déconnexion/reconnexion.
+    return DEFAULT_USERS.map((defaultUser) => {
+      const persistedUser = parsedUsers.find((user) => user.id === defaultUser.id);
+      if (!persistedUser) return defaultUser;
+
+      const accounts = defaultUser.accounts.map((defaultAccount) => {
+        const persistedAccount = persistedUser.accounts?.find(
+          (account) => account.id === defaultAccount.id,
+        );
+        return persistedAccount
+          ? { ...defaultAccount, balance: persistedAccount.balance }
+          : defaultAccount;
+      });
+
+      return {
+        ...defaultUser,
+        accounts,
+        transactions: persistedUser.transactions ?? defaultUser.transactions,
+      };
+    });
   } catch {
     localStorage.removeItem(PERSISTED_USERS_KEY);
     return DEFAULT_USERS;
