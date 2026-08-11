@@ -7885,14 +7885,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2299",
-        "balance": 876250,
+        "balance": 8760,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5499",
-        "balance": 0,
+        "balance": 7520,
         "icon": "piggy-bank"
       },
       {
@@ -7906,7 +7906,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "livret-jeune",
         "type": "Livret Jeune",
         "number": "N°******6699",
-        "balance": 0,
+        "balance": 9500,
         "icon": "piggy-bank"
       }
     ],
