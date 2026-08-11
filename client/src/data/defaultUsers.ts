@@ -208,21 +208,21 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2202",
-        "balance": 3500000,
-        "icon": "wallet",
+        "balance": 997500,
+        "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5402",
-        "balance": 50000,
+        "balance": 0,
         "icon": "piggy-bank"
       },
       {
         "id": "plan",
         "type": "Plan Épargne",
         "number": "N°******8802",
-        "balance": 243000,
+        "balance": 0,
         "icon": "chart-line"
       }
     ],
@@ -256,13 +256,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "CREDIT AGRICOLE",
+      "bankName": "BNP PARIBAS",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012302",
       "key": "10",
       "iban": "FR76 3000 4100 5435012302 10",
-      "swift": "CRLYFRPPXXX"
+      "swift": "BNPAFRPPXXX"
     }
   },
   {
@@ -7265,40 +7265,10 @@ const cloneUsers = (users: DefaultUser[]): DefaultUser[] =>
   JSON.parse(JSON.stringify(users)) as DefaultUser[];
 
 export const getPersistedUsers = (): DefaultUser[] => {
-  if (typeof window === "undefined") return DEFAULT_USERS;
-  const storedUsers = localStorage.getItem(PERSISTED_USERS_KEY);
-  if (!storedUsers) return DEFAULT_USERS;
-
-  try {
-    const parsedUsers = JSON.parse(storedUsers) as DefaultUser[];
-    if (!Array.isArray(parsedUsers) || parsedUsers.length === 0) return DEFAULT_USERS;
-
-    // Les informations statiques du fichier defaultUsers.ts restent prioritaires.
-    // Seuls le solde et l’historique des opérations sont repris depuis le stockage
-    // local afin de conserver les virements après une déconnexion/reconnexion.
-    return DEFAULT_USERS.map((defaultUser) => {
-      const persistedUser = parsedUsers.find((user) => user.id === defaultUser.id);
-      if (!persistedUser) return defaultUser;
-
-      const accounts = defaultUser.accounts.map((defaultAccount) => {
-        const persistedAccount = persistedUser.accounts?.find(
-          (account) => account.id === defaultAccount.id,
-        );
-        return persistedAccount
-          ? { ...defaultAccount, balance: persistedAccount.balance }
-          : defaultAccount;
-      });
-
-      return {
-        ...defaultUser,
-        accounts,
-        transactions: persistedUser.transactions ?? defaultUser.transactions,
-      };
-    });
-  } catch {
-    localStorage.removeItem(PERSISTED_USERS_KEY);
-    return DEFAULT_USERS;
-  }
+  // defaultUsers.ts est la source unique des données affichées.
+  // Les valeurs modifiées puis commitée dans ce fichier sont donc utilisées
+  // après chaque nouvelle compilation ou nouveau déploiement.
+  return DEFAULT_USERS;
 };
 
 export const savePersistedUser = (updatedUser: DefaultUser): DefaultUser => {
