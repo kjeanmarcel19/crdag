@@ -62,14 +62,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101234",
     "nom": "Dupont",
     "prenom": "Jean",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "jean.dupont@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "jean.dupont@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -106,7 +106,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400000",
+        "reference": "MA64000000003000400000",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -115,7 +115,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400000",
+        "reference": "MA64000000004000400000",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -132,14 +132,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012300",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012300 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012300 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -148,14 +148,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101235",
     "nom": "Martin",
     "prenom": "Marie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "marie.martin@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "marie.martin@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -192,7 +192,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400001",
+        "reference": "MA64000000003000400001",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -201,7 +201,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400001",
+        "reference": "MA64000000004000400001",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -218,14 +218,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012301",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012301 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012301 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -234,14 +234,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101236",
     "nom": "Bernard",
     "prenom": "Pierre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "pierre.bernard@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "pierre.bernard@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -278,7 +278,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400002",
+        "reference": "MA64000000003000400002",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -287,7 +287,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400002",
+        "reference": "MA64000000004000400002",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -304,14 +304,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012302",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012302 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012302 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -320,14 +320,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101237",
     "nom": "Thomas",
     "prenom": "Sophie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "sophie.thomas@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "sophie.thomas@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -364,7 +364,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400003",
+        "reference": "MA64000000003000400003",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -373,7 +373,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400003",
+        "reference": "MA64000000004000400003",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -390,14 +390,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012303",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012303 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012303 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -406,14 +406,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101238",
     "nom": "Robert",
     "prenom": "Lucas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "lucas.robert@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lucas.robert@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -450,7 +450,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400004",
+        "reference": "MA64000000003000400004",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -459,7 +459,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400004",
+        "reference": "MA64000000004000400004",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -476,14 +476,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012304",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012304 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012304 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -492,14 +492,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101239",
     "nom": "Petit",
     "prenom": "Camille",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "camille.petit@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "camille.petit@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -536,7 +536,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400005",
+        "reference": "MA64000000003000400005",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -545,7 +545,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400005",
+        "reference": "MA64000000004000400005",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -562,14 +562,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012305",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012305 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012305 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -578,14 +578,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101240",
     "nom": "Durand",
     "prenom": "Thomas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "thomas.durand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "thomas.durand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -622,7 +622,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400006",
+        "reference": "MA64000000003000400006",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -631,7 +631,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400006",
+        "reference": "MA64000000004000400006",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -648,14 +648,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012306",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012306 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012306 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -664,14 +664,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101241",
     "nom": "Leroy",
     "prenom": "Emma",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "emma.leroy@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "emma.leroy@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -708,7 +708,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400007",
+        "reference": "MA64000000003000400007",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -717,7 +717,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400007",
+        "reference": "MA64000000004000400007",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -734,14 +734,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012307",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012307 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012307 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -750,14 +750,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101242",
     "nom": "Moreau",
     "prenom": "Nicolas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "nicolas.moreau@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "nicolas.moreau@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -794,7 +794,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400008",
+        "reference": "MA64000000003000400008",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -803,7 +803,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400008",
+        "reference": "MA64000000004000400008",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -820,14 +820,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012308",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012308 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012308 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -836,14 +836,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101243",
     "nom": "Simon",
     "prenom": "Chloé",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "chloe.simon@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "chloe.simon@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -880,7 +880,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400009",
+        "reference": "MA64000000003000400009",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -889,7 +889,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400009",
+        "reference": "MA64000000004000400009",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -906,14 +906,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012309",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012309 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012309 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -922,14 +922,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101244",
     "nom": "Laurent",
     "prenom": "Julien",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "julien.laurent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "julien.laurent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -966,7 +966,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400010",
+        "reference": "MA64000000003000400010",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -975,7 +975,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400010",
+        "reference": "MA64000000004000400010",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -992,14 +992,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012310",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012310 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012310 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1008,14 +1008,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101245",
     "nom": "Lefebvre",
     "prenom": "Léa",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "lea.lefebvre@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lea.lefebvre@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1052,7 +1052,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400011",
+        "reference": "MA64000000003000400011",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1061,7 +1061,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400011",
+        "reference": "MA64000000004000400011",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1078,14 +1078,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012311",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012311 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012311 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1094,14 +1094,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101246",
     "nom": "Michel",
     "prenom": "Antoine",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "antoine.michel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "antoine.michel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1138,7 +1138,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400012",
+        "reference": "MA64000000003000400012",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1147,7 +1147,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400012",
+        "reference": "MA64000000004000400012",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1164,14 +1164,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012312",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012312 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012312 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1180,14 +1180,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101247",
     "nom": "Garcia",
     "prenom": "Manon",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "manon.garcia@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "manon.garcia@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1224,7 +1224,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400013",
+        "reference": "MA64000000003000400013",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1233,7 +1233,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400013",
+        "reference": "MA64000000004000400013",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1250,14 +1250,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012313",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012313 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012313 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1266,14 +1266,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101248",
     "nom": "David",
     "prenom": "Hugo",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "hugo.david@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "hugo.david@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1310,7 +1310,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400014",
+        "reference": "MA64000000003000400014",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1319,7 +1319,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400014",
+        "reference": "MA64000000004000400014",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1336,14 +1336,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012314",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012314 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012314 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1352,14 +1352,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101249",
     "nom": "Bertrand",
     "prenom": "Clara",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "clara.bertrand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "clara.bertrand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1396,7 +1396,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400015",
+        "reference": "MA64000000003000400015",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1405,7 +1405,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400015",
+        "reference": "MA64000000004000400015",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1422,14 +1422,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012315",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012315 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012315 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1438,14 +1438,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101250",
     "nom": "Roux",
     "prenom": "Alexandre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "alexandre.roux@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "alexandre.roux@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1482,7 +1482,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400016",
+        "reference": "MA64000000003000400016",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1491,7 +1491,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400016",
+        "reference": "MA64000000004000400016",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1508,14 +1508,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012316",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012316 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012316 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1524,14 +1524,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101251",
     "nom": "Vincent",
     "prenom": "Inès",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "ines.vincent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "ines.vincent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1568,7 +1568,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400017",
+        "reference": "MA64000000003000400017",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1577,7 +1577,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400017",
+        "reference": "MA64000000004000400017",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1594,14 +1594,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012317",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012317 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012317 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1610,14 +1610,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101252",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "maxime.fournier@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "maxime.fournier@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1654,7 +1654,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400018",
+        "reference": "MA64000000003000400018",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1663,7 +1663,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400018",
+        "reference": "MA64000000004000400018",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1680,14 +1680,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012318",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012318 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012318 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1696,14 +1696,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101253",
     "nom": "Morel",
     "prenom": "Élodie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "elodie.morel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "elodie.morel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1740,7 +1740,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400019",
+        "reference": "MA64000000003000400019",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1749,7 +1749,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400019",
+        "reference": "MA64000000004000400019",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1766,14 +1766,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012319",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012319 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012319 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1782,14 +1782,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101254",
     "nom": "Dupont",
     "prenom": "Jean",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "jean.dupont@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "jean.dupont@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1826,7 +1826,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400020",
+        "reference": "MA64000000003000400020",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1835,7 +1835,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400020",
+        "reference": "MA64000000004000400020",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1852,14 +1852,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012320",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012320 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012320 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1868,14 +1868,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101255",
     "nom": "Martin",
     "prenom": "Marie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "marie.martin@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "marie.martin@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1912,7 +1912,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400021",
+        "reference": "MA64000000003000400021",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -1921,7 +1921,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400021",
+        "reference": "MA64000000004000400021",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -1938,14 +1938,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012321",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012321 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012321 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -1954,14 +1954,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101256",
     "nom": "Bernard",
     "prenom": "Pierre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "pierre.bernard@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "pierre.bernard@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1998,7 +1998,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400022",
+        "reference": "MA64000000003000400022",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2007,7 +2007,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400022",
+        "reference": "MA64000000004000400022",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2024,14 +2024,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012322",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012322 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012322 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2040,14 +2040,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101257",
     "nom": "Thomas",
     "prenom": "Sophie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "sophie.thomas@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "sophie.thomas@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2084,7 +2084,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400023",
+        "reference": "MA64000000003000400023",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2093,7 +2093,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400023",
+        "reference": "MA64000000004000400023",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2110,14 +2110,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012323",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012323 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012323 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2126,14 +2126,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101258",
     "nom": "Robert",
     "prenom": "Lucas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "lucas.robert@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lucas.robert@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2170,7 +2170,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400024",
+        "reference": "MA64000000003000400024",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2179,7 +2179,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400024",
+        "reference": "MA64000000004000400024",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2196,14 +2196,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012324",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012324 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012324 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2212,14 +2212,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101259",
     "nom": "Petit",
     "prenom": "Camille",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "camille.petit@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "camille.petit@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2256,7 +2256,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400025",
+        "reference": "MA64000000003000400025",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2265,7 +2265,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400025",
+        "reference": "MA64000000004000400025",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2282,14 +2282,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012325",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012325 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012325 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2298,14 +2298,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101260",
     "nom": "Durand",
     "prenom": "Thomas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "thomas.durand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "thomas.durand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2342,7 +2342,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400026",
+        "reference": "MA64000000003000400026",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2351,7 +2351,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400026",
+        "reference": "MA64000000004000400026",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2368,14 +2368,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012326",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012326 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012326 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2384,14 +2384,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101261",
     "nom": "Leroy",
     "prenom": "Emma",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "emma.leroy@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "emma.leroy@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2428,7 +2428,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400027",
+        "reference": "MA64000000003000400027",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2437,7 +2437,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400027",
+        "reference": "MA64000000004000400027",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2454,14 +2454,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012327",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012327 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012327 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2470,14 +2470,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101262",
     "nom": "Moreau",
     "prenom": "Nicolas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "nicolas.moreau@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "nicolas.moreau@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2514,7 +2514,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400028",
+        "reference": "MA64000000003000400028",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2523,7 +2523,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400028",
+        "reference": "MA64000000004000400028",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2540,14 +2540,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012328",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012328 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012328 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2556,14 +2556,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101263",
     "nom": "Simon",
     "prenom": "Chloé",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "chloe.simon@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "chloe.simon@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2600,7 +2600,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400029",
+        "reference": "MA64000000003000400029",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2609,7 +2609,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400029",
+        "reference": "MA64000000004000400029",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2626,14 +2626,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012329",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012329 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012329 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2642,14 +2642,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101264",
     "nom": "Laurent",
     "prenom": "Julien",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "julien.laurent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "julien.laurent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2686,7 +2686,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400030",
+        "reference": "MA64000000003000400030",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2695,7 +2695,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400030",
+        "reference": "MA64000000004000400030",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2712,14 +2712,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012330",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012330 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012330 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2728,14 +2728,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101265",
     "nom": "Lefebvre",
     "prenom": "Léa",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "lea.lefebvre@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lea.lefebvre@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2772,7 +2772,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400031",
+        "reference": "MA64000000003000400031",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2781,7 +2781,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400031",
+        "reference": "MA64000000004000400031",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2798,14 +2798,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012331",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012331 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012331 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2814,14 +2814,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101266",
     "nom": "Michel",
     "prenom": "Antoine",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "antoine.michel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "antoine.michel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2858,7 +2858,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400032",
+        "reference": "MA64000000003000400032",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2867,7 +2867,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400032",
+        "reference": "MA64000000004000400032",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2884,14 +2884,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012332",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012332 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012332 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2900,14 +2900,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101267",
     "nom": "Garcia",
     "prenom": "Manon",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "manon.garcia@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "manon.garcia@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2944,7 +2944,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400033",
+        "reference": "MA64000000003000400033",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -2953,7 +2953,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400033",
+        "reference": "MA64000000004000400033",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -2970,14 +2970,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012333",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012333 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012333 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -2986,14 +2986,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101268",
     "nom": "David",
     "prenom": "Hugo",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "hugo.david@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "hugo.david@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3030,7 +3030,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400034",
+        "reference": "MA64000000003000400034",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3039,7 +3039,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400034",
+        "reference": "MA64000000004000400034",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3056,14 +3056,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012334",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012334 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012334 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3072,14 +3072,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101269",
     "nom": "Bertrand",
     "prenom": "Clara",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "clara.bertrand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "clara.bertrand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3116,7 +3116,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400035",
+        "reference": "MA64000000003000400035",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3125,7 +3125,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400035",
+        "reference": "MA64000000004000400035",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3142,14 +3142,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012335",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012335 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012335 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3158,14 +3158,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101270",
     "nom": "Roux",
     "prenom": "Alexandre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "alexandre.roux@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "alexandre.roux@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3202,7 +3202,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400036",
+        "reference": "MA64000000003000400036",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3211,7 +3211,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400036",
+        "reference": "MA64000000004000400036",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3228,14 +3228,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012336",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012336 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012336 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3244,14 +3244,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101271",
     "nom": "Vincent",
     "prenom": "Inès",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "ines.vincent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "ines.vincent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3288,7 +3288,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400037",
+        "reference": "MA64000000003000400037",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3297,7 +3297,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400037",
+        "reference": "MA64000000004000400037",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3314,14 +3314,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012337",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012337 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012337 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3330,14 +3330,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101272",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "maxime.fournier@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "maxime.fournier@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3374,7 +3374,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400038",
+        "reference": "MA64000000003000400038",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3383,7 +3383,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400038",
+        "reference": "MA64000000004000400038",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3400,14 +3400,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012338",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012338 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012338 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3416,14 +3416,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101273",
     "nom": "Morel",
     "prenom": "Élodie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "elodie.morel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "elodie.morel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3460,7 +3460,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400039",
+        "reference": "MA64000000003000400039",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3469,7 +3469,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400039",
+        "reference": "MA64000000004000400039",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3486,14 +3486,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012339",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012339 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012339 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3502,14 +3502,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101274",
     "nom": "Dupont",
     "prenom": "Jean",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "jean.dupont@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "jean.dupont@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3546,7 +3546,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400040",
+        "reference": "MA64000000003000400040",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3555,7 +3555,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400040",
+        "reference": "MA64000000004000400040",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3572,14 +3572,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012340",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012340 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012340 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3588,14 +3588,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101275",
     "nom": "Martin",
     "prenom": "Marie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "marie.martin@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "marie.martin@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3632,7 +3632,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400041",
+        "reference": "MA64000000003000400041",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3641,7 +3641,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400041",
+        "reference": "MA64000000004000400041",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3658,14 +3658,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012341",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012341 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012341 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3674,14 +3674,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101276",
     "nom": "Bernard",
     "prenom": "Pierre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "pierre.bernard@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "pierre.bernard@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3718,7 +3718,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400042",
+        "reference": "MA64000000003000400042",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3727,7 +3727,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400042",
+        "reference": "MA64000000004000400042",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3744,14 +3744,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012342",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012342 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012342 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3760,14 +3760,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101277",
     "nom": "Thomas",
     "prenom": "Sophie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "sophie.thomas@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "sophie.thomas@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3804,7 +3804,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400043",
+        "reference": "MA64000000003000400043",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3813,7 +3813,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400043",
+        "reference": "MA64000000004000400043",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3830,14 +3830,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012343",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012343 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012343 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3846,14 +3846,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101278",
     "nom": "Robert",
     "prenom": "Lucas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "lucas.robert@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lucas.robert@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3890,7 +3890,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400044",
+        "reference": "MA64000000003000400044",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3899,7 +3899,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400044",
+        "reference": "MA64000000004000400044",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -3916,14 +3916,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012344",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012344 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012344 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -3932,14 +3932,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101279",
     "nom": "Petit",
     "prenom": "Camille",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "camille.petit@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "camille.petit@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3976,7 +3976,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400045",
+        "reference": "MA64000000003000400045",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -3985,7 +3985,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400045",
+        "reference": "MA64000000004000400045",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4002,14 +4002,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012345",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012345 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012345 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4018,14 +4018,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101280",
     "nom": "Durand",
     "prenom": "Thomas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "thomas.durand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "thomas.durand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4062,7 +4062,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400046",
+        "reference": "MA64000000003000400046",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4071,7 +4071,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400046",
+        "reference": "MA64000000004000400046",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4088,14 +4088,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012346",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012346 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012346 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4104,14 +4104,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101281",
     "nom": "Leroy",
     "prenom": "Emma",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "emma.leroy@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "emma.leroy@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4148,7 +4148,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400047",
+        "reference": "MA64000000003000400047",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4157,7 +4157,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400047",
+        "reference": "MA64000000004000400047",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4174,14 +4174,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012347",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012347 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012347 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4190,14 +4190,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101282",
     "nom": "Moreau",
     "prenom": "Nicolas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "nicolas.moreau@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "nicolas.moreau@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4234,7 +4234,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400048",
+        "reference": "MA64000000003000400048",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4243,7 +4243,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400048",
+        "reference": "MA64000000004000400048",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4260,14 +4260,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012348",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012348 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012348 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4276,14 +4276,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101283",
     "nom": "Simon",
     "prenom": "Chloé",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "chloe.simon@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "chloe.simon@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4320,7 +4320,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400049",
+        "reference": "MA64000000003000400049",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4329,7 +4329,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400049",
+        "reference": "MA64000000004000400049",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4346,14 +4346,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012349",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012349 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012349 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4362,14 +4362,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101284",
     "nom": "Laurent",
     "prenom": "Julien",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "julien.laurent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "julien.laurent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4406,7 +4406,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400050",
+        "reference": "MA64000000003000400050",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4415,7 +4415,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400050",
+        "reference": "MA64000000004000400050",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4432,14 +4432,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012350",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012350 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012350 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4448,14 +4448,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101285",
     "nom": "Lefebvre",
     "prenom": "Léa",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "lea.lefebvre@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lea.lefebvre@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4492,7 +4492,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400051",
+        "reference": "MA64000000003000400051",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4501,7 +4501,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400051",
+        "reference": "MA64000000004000400051",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4518,14 +4518,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012351",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012351 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012351 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4534,14 +4534,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101286",
     "nom": "Michel",
     "prenom": "Antoine",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "antoine.michel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "antoine.michel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4578,7 +4578,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400052",
+        "reference": "MA64000000003000400052",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4587,7 +4587,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400052",
+        "reference": "MA64000000004000400052",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4604,14 +4604,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012352",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012352 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012352 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4620,14 +4620,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101287",
     "nom": "Garcia",
     "prenom": "Manon",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "manon.garcia@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "manon.garcia@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4664,7 +4664,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400053",
+        "reference": "MA64000000003000400053",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4673,7 +4673,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400053",
+        "reference": "MA64000000004000400053",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4690,14 +4690,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012353",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012353 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012353 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4706,14 +4706,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101288",
     "nom": "David",
     "prenom": "Hugo",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "hugo.david@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "hugo.david@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4750,7 +4750,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400054",
+        "reference": "MA64000000003000400054",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4759,7 +4759,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400054",
+        "reference": "MA64000000004000400054",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4776,14 +4776,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012354",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012354 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012354 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4792,14 +4792,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101289",
     "nom": "Bertrand",
     "prenom": "Clara",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "clara.bertrand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "clara.bertrand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4836,7 +4836,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400055",
+        "reference": "MA64000000003000400055",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4845,7 +4845,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400055",
+        "reference": "MA64000000004000400055",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4862,14 +4862,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012355",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012355 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012355 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4878,14 +4878,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101290",
     "nom": "Roux",
     "prenom": "Alexandre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "alexandre.roux@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "alexandre.roux@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4922,7 +4922,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400056",
+        "reference": "MA64000000003000400056",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -4931,7 +4931,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400056",
+        "reference": "MA64000000004000400056",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -4948,14 +4948,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012356",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012356 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012356 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -4964,14 +4964,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101291",
     "nom": "Vincent",
     "prenom": "Inès",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "ines.vincent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "ines.vincent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5008,7 +5008,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400057",
+        "reference": "MA64000000003000400057",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5017,7 +5017,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400057",
+        "reference": "MA64000000004000400057",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5034,14 +5034,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012357",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012357 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012357 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5050,14 +5050,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101292",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "maxime.fournier@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "maxime.fournier@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5094,7 +5094,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400058",
+        "reference": "MA64000000003000400058",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5103,7 +5103,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400058",
+        "reference": "MA64000000004000400058",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5120,14 +5120,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012358",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012358 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012358 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5136,14 +5136,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101293",
     "nom": "Morel",
     "prenom": "Élodie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "elodie.morel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "elodie.morel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5180,7 +5180,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400059",
+        "reference": "MA64000000003000400059",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5189,7 +5189,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400059",
+        "reference": "MA64000000004000400059",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5206,14 +5206,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012359",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012359 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012359 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5222,14 +5222,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101294",
     "nom": "Dupont",
     "prenom": "Jean",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "jean.dupont@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "jean.dupont@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5266,7 +5266,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400060",
+        "reference": "MA64000000003000400060",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5275,7 +5275,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400060",
+        "reference": "MA64000000004000400060",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5292,14 +5292,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012360",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012360 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012360 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5308,14 +5308,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101295",
     "nom": "Martin",
     "prenom": "Marie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "marie.martin@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "marie.martin@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5352,7 +5352,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400061",
+        "reference": "MA64000000003000400061",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5361,7 +5361,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400061",
+        "reference": "MA64000000004000400061",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5378,14 +5378,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012361",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012361 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012361 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5394,14 +5394,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101296",
     "nom": "Bernard",
     "prenom": "Pierre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "pierre.bernard@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "pierre.bernard@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5438,7 +5438,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400062",
+        "reference": "MA64000000003000400062",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5447,7 +5447,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400062",
+        "reference": "MA64000000004000400062",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5464,14 +5464,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012362",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012362 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012362 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5480,14 +5480,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101297",
     "nom": "Thomas",
     "prenom": "Sophie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "sophie.thomas@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "sophie.thomas@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5524,7 +5524,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400063",
+        "reference": "MA64000000003000400063",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5533,7 +5533,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400063",
+        "reference": "MA64000000004000400063",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5550,14 +5550,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012363",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012363 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012363 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5566,14 +5566,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101298",
     "nom": "Robert",
     "prenom": "Lucas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "lucas.robert@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lucas.robert@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5610,7 +5610,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400064",
+        "reference": "MA64000000003000400064",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5619,7 +5619,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400064",
+        "reference": "MA64000000004000400064",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5636,14 +5636,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012364",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012364 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012364 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5652,14 +5652,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101299",
     "nom": "Petit",
     "prenom": "Camille",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "camille.petit@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "camille.petit@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5696,7 +5696,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400065",
+        "reference": "MA64000000003000400065",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5705,7 +5705,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400065",
+        "reference": "MA64000000004000400065",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5722,14 +5722,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012365",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012365 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012365 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5738,14 +5738,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101300",
     "nom": "Durand",
     "prenom": "Thomas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "thomas.durand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "thomas.durand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5782,7 +5782,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400066",
+        "reference": "MA64000000003000400066",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5791,7 +5791,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400066",
+        "reference": "MA64000000004000400066",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5808,14 +5808,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012366",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012366 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012366 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5824,14 +5824,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101301",
     "nom": "Leroy",
     "prenom": "Emma",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "emma.leroy@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "emma.leroy@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5868,7 +5868,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400067",
+        "reference": "MA64000000003000400067",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5877,7 +5877,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400067",
+        "reference": "MA64000000004000400067",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5894,14 +5894,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012367",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012367 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012367 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5910,14 +5910,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101302",
     "nom": "Moreau",
     "prenom": "Nicolas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "nicolas.moreau@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "nicolas.moreau@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5954,7 +5954,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400068",
+        "reference": "MA64000000003000400068",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -5963,7 +5963,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400068",
+        "reference": "MA64000000004000400068",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -5980,14 +5980,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012368",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012368 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012368 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -5996,14 +5996,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101303",
     "nom": "Simon",
     "prenom": "Chloé",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "chloe.simon@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "chloe.simon@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6040,7 +6040,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400069",
+        "reference": "MA64000000003000400069",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6049,7 +6049,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400069",
+        "reference": "MA64000000004000400069",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6066,14 +6066,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012369",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012369 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012369 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6082,14 +6082,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101304",
     "nom": "Laurent",
     "prenom": "Julien",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "julien.laurent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "julien.laurent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6126,7 +6126,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400070",
+        "reference": "MA64000000003000400070",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6135,7 +6135,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400070",
+        "reference": "MA64000000004000400070",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6152,14 +6152,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012370",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012370 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012370 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6168,14 +6168,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101305",
     "nom": "Lefebvre",
     "prenom": "Léa",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "lea.lefebvre@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lea.lefebvre@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6212,7 +6212,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400071",
+        "reference": "MA64000000003000400071",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6221,7 +6221,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400071",
+        "reference": "MA64000000004000400071",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6238,14 +6238,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012371",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012371 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012371 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6254,14 +6254,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101306",
     "nom": "Michel",
     "prenom": "Antoine",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "antoine.michel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "antoine.michel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6298,7 +6298,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400072",
+        "reference": "MA64000000003000400072",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6307,7 +6307,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400072",
+        "reference": "MA64000000004000400072",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6324,14 +6324,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012372",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012372 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012372 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6340,14 +6340,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101307",
     "nom": "Garcia",
     "prenom": "Manon",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "manon.garcia@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "manon.garcia@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6384,7 +6384,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400073",
+        "reference": "MA64000000003000400073",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6393,7 +6393,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400073",
+        "reference": "MA64000000004000400073",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6410,14 +6410,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012373",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012373 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012373 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6426,14 +6426,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101308",
     "nom": "David",
     "prenom": "Hugo",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "hugo.david@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "hugo.david@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6470,7 +6470,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400074",
+        "reference": "MA64000000003000400074",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6479,7 +6479,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400074",
+        "reference": "MA64000000004000400074",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6496,14 +6496,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012374",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012374 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012374 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6512,14 +6512,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101309",
     "nom": "Bertrand",
     "prenom": "Clara",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "clara.bertrand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "clara.bertrand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6556,7 +6556,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400075",
+        "reference": "MA64000000003000400075",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6565,7 +6565,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400075",
+        "reference": "MA64000000004000400075",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6582,14 +6582,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012375",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012375 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012375 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6598,14 +6598,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101310",
     "nom": "Roux",
     "prenom": "Alexandre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "alexandre.roux@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "alexandre.roux@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6642,7 +6642,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400076",
+        "reference": "MA64000000003000400076",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6651,7 +6651,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400076",
+        "reference": "MA64000000004000400076",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6668,14 +6668,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012376",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012376 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012376 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6684,14 +6684,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101311",
     "nom": "Vincent",
     "prenom": "Inès",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "ines.vincent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "ines.vincent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6728,7 +6728,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400077",
+        "reference": "MA64000000003000400077",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6737,7 +6737,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400077",
+        "reference": "MA64000000004000400077",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6754,14 +6754,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012377",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012377 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012377 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6770,14 +6770,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101312",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "maxime.fournier@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "maxime.fournier@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6814,7 +6814,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400078",
+        "reference": "MA64000000003000400078",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6823,7 +6823,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400078",
+        "reference": "MA64000000004000400078",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6840,14 +6840,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012378",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012378 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012378 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6856,14 +6856,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101313",
     "nom": "Morel",
     "prenom": "Élodie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "elodie.morel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "elodie.morel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6900,7 +6900,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400079",
+        "reference": "MA64000000003000400079",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6909,7 +6909,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400079",
+        "reference": "MA64000000004000400079",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -6926,14 +6926,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012379",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012379 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012379 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -6942,14 +6942,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101314",
     "nom": "Dupont",
     "prenom": "Jean",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "jean.dupont@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "jean.dupont@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6986,7 +6986,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400080",
+        "reference": "MA64000000003000400080",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -6995,7 +6995,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400080",
+        "reference": "MA64000000004000400080",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7012,14 +7012,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012380",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012380 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012380 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7028,14 +7028,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101315",
     "nom": "Martin",
     "prenom": "Marie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "marie.martin@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "marie.martin@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7072,7 +7072,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400081",
+        "reference": "MA64000000003000400081",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7081,7 +7081,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400081",
+        "reference": "MA64000000004000400081",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7098,14 +7098,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012381",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012381 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012381 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7114,14 +7114,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101316",
     "nom": "Bernard",
     "prenom": "Pierre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "pierre.bernard@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "pierre.bernard@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7158,7 +7158,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400082",
+        "reference": "MA64000000003000400082",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7167,7 +7167,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400082",
+        "reference": "MA64000000004000400082",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7184,14 +7184,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012382",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012382 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012382 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7200,14 +7200,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101317",
     "nom": "Thomas",
     "prenom": "Sophie",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "sophie.thomas@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "sophie.thomas@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7244,7 +7244,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400083",
+        "reference": "MA64000000003000400083",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7253,7 +7253,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400083",
+        "reference": "MA64000000004000400083",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7270,14 +7270,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012383",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012383 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012383 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7286,14 +7286,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101318",
     "nom": "Robert",
     "prenom": "Lucas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "lucas.robert@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lucas.robert@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7330,7 +7330,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400084",
+        "reference": "MA64000000003000400084",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7339,7 +7339,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400084",
+        "reference": "MA64000000004000400084",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7356,14 +7356,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012384",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012384 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012384 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7372,14 +7372,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101319",
     "nom": "Petit",
     "prenom": "Camille",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "camille.petit@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "camille.petit@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7416,7 +7416,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400085",
+        "reference": "MA64000000003000400085",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7425,7 +7425,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400085",
+        "reference": "MA64000000004000400085",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7442,14 +7442,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012385",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012385 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012385 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7458,14 +7458,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101320",
     "nom": "Durand",
     "prenom": "Thomas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "thomas.durand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "thomas.durand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7502,7 +7502,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400086",
+        "reference": "MA64000000003000400086",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7511,7 +7511,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400086",
+        "reference": "MA64000000004000400086",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7528,14 +7528,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012386",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012386 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012386 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7544,14 +7544,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101321",
     "nom": "Leroy",
     "prenom": "Emma",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "emma.leroy@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "emma.leroy@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7588,7 +7588,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400087",
+        "reference": "MA64000000003000400087",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7597,7 +7597,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400087",
+        "reference": "MA64000000004000400087",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7614,14 +7614,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012387",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012387 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012387 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7630,14 +7630,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101322",
     "nom": "Moreau",
     "prenom": "Nicolas",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "nicolas.moreau@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "nicolas.moreau@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7674,7 +7674,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400088",
+        "reference": "MA64000000003000400088",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7683,7 +7683,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400088",
+        "reference": "MA64000000004000400088",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7700,14 +7700,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012388",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012388 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012388 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7716,14 +7716,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101323",
     "nom": "Simon",
     "prenom": "Chloé",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "chloe.simon@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "chloe.simon@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7760,7 +7760,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400089",
+        "reference": "MA64000000003000400089",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7769,7 +7769,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400089",
+        "reference": "MA64000000004000400089",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7786,14 +7786,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012389",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012389 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012389 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7802,14 +7802,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101324",
     "nom": "Laurent",
     "prenom": "Julien",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "julien.laurent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "julien.laurent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7846,7 +7846,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400090",
+        "reference": "MA64000000003000400090",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7855,7 +7855,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400090",
+        "reference": "MA64000000004000400090",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7872,14 +7872,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012390",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012390 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012390 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7888,14 +7888,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101325",
     "nom": "Lefebvre",
     "prenom": "Léa",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "lea.lefebvre@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "lea.lefebvre@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7932,7 +7932,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400091",
+        "reference": "MA64000000003000400091",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -7941,7 +7941,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400091",
+        "reference": "MA64000000004000400091",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -7958,14 +7958,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012391",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012391 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012391 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -7974,14 +7974,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101326",
     "nom": "Michel",
     "prenom": "Antoine",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "antoine.michel@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "antoine.michel@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8018,7 +8018,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400092",
+        "reference": "MA64000000003000400092",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8027,7 +8027,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400092",
+        "reference": "MA64000000004000400092",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8044,14 +8044,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012392",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012392 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012392 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8060,14 +8060,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101327",
     "nom": "Garcia",
     "prenom": "Manon",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "manon.garcia@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "manon.garcia@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8104,7 +8104,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400093",
+        "reference": "MA64000000003000400093",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8113,7 +8113,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400093",
+        "reference": "MA64000000004000400093",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8130,14 +8130,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012393",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012393 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012393 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8146,14 +8146,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101328",
     "nom": "David",
     "prenom": "Hugo",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "hugo.david@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "hugo.david@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8190,7 +8190,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400094",
+        "reference": "MA64000000003000400094",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8199,7 +8199,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400094",
+        "reference": "MA64000000004000400094",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8216,14 +8216,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012394",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012394 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012394 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8232,14 +8232,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101329",
     "nom": "Bertrand",
     "prenom": "Clara",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "clara.bertrand@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "clara.bertrand@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8276,7 +8276,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400095",
+        "reference": "MA64000000003000400095",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8285,7 +8285,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400095",
+        "reference": "MA64000000004000400095",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8302,14 +8302,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012395",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012395 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012395 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8318,14 +8318,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101330",
     "nom": "Roux",
     "prenom": "Alexandre",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Arnaud Leroy",
-    "email": "alexandre.roux@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "arnaud.leroy@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "alexandre.roux@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "arnaud.leroy@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8362,7 +8362,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400096",
+        "reference": "MA64000000003000400096",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8371,7 +8371,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400096",
+        "reference": "MA64000000004000400096",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8388,14 +8388,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012396",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012396 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012396 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8404,14 +8404,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101331",
     "nom": "Vincent",
     "prenom": "Inès",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Sophie Bernard",
-    "email": "ines.vincent@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "sophie.bernard@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "ines.vincent@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "sophie.bernard@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8448,7 +8448,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400097",
+        "reference": "MA64000000003000400097",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8457,7 +8457,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400097",
+        "reference": "MA64000000004000400097",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8474,14 +8474,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012397",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012397 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012397 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8490,14 +8490,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101332",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
-    "email": "maxime.fournier@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "maxime.fournier@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "marc.durand@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8534,7 +8534,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400098",
+        "reference": "MA64000000003000400098",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8543,7 +8543,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400098",
+        "reference": "MA64000000004000400098",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8560,14 +8560,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012398",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012398 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012398 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   },
   {
@@ -8576,14 +8576,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101333",
     "nom": "Drome",
     "prenom": "Frederic",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Claire Martin",
-    "email": "frederic.drome@exemple.fr",
-    "phone": "+33 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Paris",
-    "managerEmail": "claire.martin@exemple.fr",
-    "managerPhone": "+33 1 45 67 89 00",
-    "managerAgency": "Agence principale — Paris Centre",
+    "email": "frederic.drome@exemple.ma",
+    "phone": "+212 6 12 34 56 78",
+    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
+    "managerEmail": "claire.martin@exemple.ma",
+    "managerPhone": "+212 5 22 54 19 86",
+    "managerAgency": "Agence principale — Rabat Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8620,7 +8620,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 1,
         "type": "Virement sortant",
-        "reference": "FR76000000003000400099",
+        "reference": "MA64000000003000400099",
         "date": "14 Avril 2025",
         "amount": -25000,
         "status": "Effectué",
@@ -8629,7 +8629,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
       {
         "id": 2,
         "type": "Virement entrant",
-        "reference": "FR76000000004000400099",
+        "reference": "MA64000000004000400099",
         "date": "05 Mars 2025",
         "amount": 20000,
         "status": "Effectué",
@@ -8646,14 +8646,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
-      "bankCode": "30004",
-      "branchCode": "100",
+      "bankName": "CRÉDIT AGRICOLE DU MAROC",
+      "bankCode": "225",
+      "branchCode": "01000",
       "accountNumber": "5435012399",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012399 10",
-      "swift": "BNPAFRPPXXX",
-      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
+      "iban": "MA64 2250 1000 5435012399 10",
+      "swift": "CNCAMAMRXXX",
+      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
     }
   }
 ];
@@ -8680,15 +8680,15 @@ const withDefaultProfileData = (user: DefaultUser): DefaultUser => {
 
   return {
     ...user,
-    email: user.email ?? `${emailSlug}@exemple.fr`,
-    phone: user.phone ?? "+33 6 12 34 56 78",
-    address: user.address ?? "12 rue de la République, 75001 Paris",
-    managerEmail: user.managerEmail ?? "marc.durand@exemple.fr",
-    managerPhone: user.managerPhone ?? "+33 1 45 67 89 00",
-    managerAgency: user.managerAgency ?? "Agence principale — Paris Centre",
+    email: user.email ?? `${emailSlug}@exemple.ma`,
+    phone: user.phone ?? "+212 6 12 34 56 78",
+    address: user.address ?? "49 place des Alaouites, 10000 Rabat, Maroc",
+    managerEmail: user.managerEmail ?? "marc.durand@exemple.ma",
+    managerPhone: user.managerPhone ?? "+212 5 22 54 19 86",
+    managerAgency: user.managerAgency ?? "Agence principale — Rabat Centre",
     rib: {
       ...user.rib,
-      bankAddress: user.rib.bankAddress ?? "Agence principale — 12 rue de la République, 75001 Paris",
+      bankAddress: user.rib.bankAddress ?? "Agence principale — 49 place des Alaouites, 10000 Rabat, Maroc",
     },
   };
 };
