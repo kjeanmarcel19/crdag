@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
-import { AUTH_SESSION_KEY, AUTH_USER_KEY, getAuthenticatedUser } from "../data/defaultUsers";
+import { AUTH_SESSION_KEY, AUTH_USER_KEY, getAuthenticatedUser, savePersistedUser } from "../data/defaultUsers";
 
 const settingsSections = [
   {
@@ -64,6 +64,14 @@ const settingsSections = [
     ],
   },
 ];
+
+type ProfileDraft = {
+  email: string;
+  phone: string;
+  address: string;
+  managerEmail: string;
+  managerPhone: string;
+};
 
 type DetailRowProps = {
   icon: typeof User;
@@ -120,13 +128,52 @@ function SectionCard({
   );
 }
 
+function ProfileInput({
+  label,
+  value,
+  placeholder,
+  type = "text",
+  onChange,
+}: {
+  label: string;
+  value: string;
+  placeholder: string;
+  type?: string;
+  onChange: (value: string) => void;
+}) {
+  return (
+    <label className="block">
+      <span className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wide text-gray-500">{label}</span>
+      <input
+        type={type}
+        value={value}
+        placeholder={placeholder}
+        onChange={(event) => onChange(event.target.value)}
+        className="w-full rounded-xl border border-gray-200 bg-white px-3.5 py-3 text-sm text-gray-800 outline-none transition focus:border-[#1BA098] focus:ring-2 focus:ring-[#1BA098]/15"
+      />
+    </label>
+  );
+}
+
 export default function Settings() {
-  const currentUser = getAuthenticatedUser();
+  const [currentUser, setCurrentUser] = useState(() => getAuthenticatedUser());
   const displayName = currentUser ? `${currentUser.prenom} ${currentUser.nom}` : "Utilisateur";
   const initials = currentUser ? `${currentUser.prenom[0] ?? ""}${currentUser.nom[0] ?? ""}` : "U";
   const [, setLocation] = useLocation();
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [isEditingProfile, setIsEditingProfile] = useState(false);
+  const [savedProfile, setSavedProfile] = useState(false);
+  const [profileDraft, setProfileDraft] = useState<ProfileDraft>(() => {
+    const user = getAuthenticatedUser();
+    return {
+      email: user?.email ?? "",
+      phone: user?.phone ?? "",
+      address: user?.address ?? "",
+      managerEmail: user?.managerEmail ?? "",
+      managerPhone: user?.managerPhone ?? "",
+    };
+  });
   const [toggles, setToggles] = useState<Record<string, boolean>>({
     biometric: true,
     twoFactor: true,
@@ -151,6 +198,29 @@ export default function Settings() {
 
   const handleToggle = (key: string) => {
     setToggles((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const updateDraft = (field: keyof ProfileDraft, value: string) => {
+    setProfileDraft((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSaveProfile = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!currentUser) return;
+
+    const updatedUser = savePersistedUser({
+      ...currentUser,
+      email: profileDraft.email.trim() || undefined,
+      phone: profileDraft.phone.trim() || undefined,
+      address: profileDraft.address.trim() || undefined,
+      managerEmail: profileDraft.managerEmail.trim() || undefined,
+      managerPhone: profileDraft.managerPhone.trim() || undefined,
+    });
+
+    setCurrentUser(updatedUser);
+    setIsEditingProfile(false);
+    setSavedProfile(true);
+    window.setTimeout(() => setSavedProfile(false), 2200);
   };
 
   const handleLogout = () => {
@@ -216,31 +286,89 @@ export default function Settings() {
               title="Informations du propriétaire"
               description="Les informations personnelles du titulaire principal de ce compte."
             >
-              <div className="divide-y divide-gray-100">
-                <DetailRow icon={User} label="Nom complet" value={displayName} />
-                <DetailRow icon={Hash} label="Identifiant client" value={currentUser?.identifiant ?? "Non renseigné"} />
-                <DetailRow
-                  icon={Lock}
-                  label="Code personnel"
-                  value={revealed.personalCode ? personalCode || "Non renseigné" : maskedPersonalCode}
-                  action={personalCode ? (
-                    <button
-                      type="button"
-                      onClick={() => toggleVisibility("personalCode")}
-                      aria-label={revealed.personalCode ? "Masquer le code personnel" : "Afficher le code personnel"}
-                      className="mt-1 rounded-lg p-2 text-gray-400 transition-colors hover:bg-gray-50 hover:text-[#1BA098]"
-                    >
-                      {revealed.personalCode ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </button>
-                  ) : undefined}
-                />
-                <DetailRow icon={MapPin} label="Pays de résidence" value={currentUser?.location ?? "Non renseigné"} />
-                <DetailRow icon={Mail} label="Email personnel" value="Non renseigné" muted />
-                <DetailRow icon={Phone} label="Téléphone personnel" value="Non renseigné" muted />
-                <DetailRow icon={MapPin} label="Adresse postale" value="Non renseignée" muted />
-                <DetailRow icon={BadgeCheck} label="Statut du compte" value={currentUser?.status ?? "Non renseigné"} />
-                <DetailRow icon={Clock3} label="Dernière connexion" value={lastConnection} muted={lastConnection === "Non renseignée"} />
+              <div className="mb-4 flex items-start justify-between gap-3 rounded-xl border border-[#d6efec] bg-[#f1fbfa] px-3.5 py-3">
+                <div className="flex items-start gap-2">
+                  <BadgeCheck size={16} className="mt-0.5 shrink-0 text-[#1BA098]" />
+                  <p className="text-xs leading-relaxed text-[#287a75]">
+                    {isEditingProfile ? "Complétez les informations manquantes puis enregistrez vos modifications." : "Certaines informations peuvent être ajoutées ou modifiées depuis ce profil."}
+                  </p>
+                </div>
+                {!isEditingProfile && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setProfileDraft({
+                        email: currentUser?.email ?? "",
+                        phone: currentUser?.phone ?? "",
+                        address: currentUser?.address ?? "",
+                        managerEmail: currentUser?.managerEmail ?? "",
+                        managerPhone: currentUser?.managerPhone ?? "",
+                      });
+                      setIsEditingProfile(true);
+                    }}
+                    className="shrink-0 rounded-lg bg-[#1BA098] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#16877f] active:scale-[0.98]"
+                  >
+                    Modifier
+                  </button>
+                )}
               </div>
+
+              {isEditingProfile ? (
+                <form onSubmit={handleSaveProfile} className="space-y-5">
+                  <div>
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Coordonnées personnelles</p>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <ProfileInput label="Email personnel" type="email" value={profileDraft.email} placeholder="exemple@email.com" onChange={(value) => updateDraft("email", value)} />
+                      <ProfileInput label="Téléphone personnel" type="tel" value={profileDraft.phone} placeholder="06 00 00 00 00" onChange={(value) => updateDraft("phone", value)} />
+                    </div>
+                    <div className="mt-4">
+                      <ProfileInput label="Adresse postale" value={profileDraft.address} placeholder="Numéro, rue, ville, code postal" onChange={(value) => updateDraft("address", value)} />
+                    </div>
+                  </div>
+
+                  <div className="border-t border-gray-100 pt-5">
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Coordonnées du gestionnaire</p>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <ProfileInput label="Email professionnel" type="email" value={profileDraft.managerEmail} placeholder="gestionnaire@banque.fr" onChange={(value) => updateDraft("managerEmail", value)} />
+                      <ProfileInput label="Téléphone professionnel" type="tel" value={profileDraft.managerPhone} placeholder="01 00 00 00 00" onChange={(value) => updateDraft("managerPhone", value)} />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col-reverse gap-2 border-t border-gray-100 pt-4 sm:flex-row sm:justify-end">
+                    <button type="button" onClick={() => setIsEditingProfile(false)} className="rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50">Annuler</button>
+                    <button type="submit" className="flex items-center justify-center gap-2 rounded-xl bg-[#1BA098] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#16877f] active:scale-[0.98]">
+                      <Check size={16} /> Enregistrer les informations
+                    </button>
+                  </div>
+                  {savedProfile && <p className="flex items-center justify-end gap-1.5 text-xs font-medium text-[#1BA098]"><Check size={14} /> Informations enregistrées</p>}
+                </form>
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  <DetailRow icon={User} label="Nom complet" value={displayName} />
+                  <DetailRow icon={Hash} label="Identifiant client" value={currentUser?.identifiant ?? "Non renseigné"} />
+                  <DetailRow
+                    icon={Lock}
+                    label="Code personnel"
+                    value={revealed.personalCode ? personalCode || "Non renseigné" : maskedPersonalCode}
+                    action={personalCode ? (
+                      <button
+                        type="button"
+                        onClick={() => toggleVisibility("personalCode")}
+                        aria-label={revealed.personalCode ? "Masquer le code personnel" : "Afficher le code personnel"}
+                        className="mt-1 rounded-lg p-2 text-gray-400 transition-colors hover:bg-gray-50 hover:text-[#1BA098]"
+                      >
+                        {revealed.personalCode ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    ) : undefined}
+                  />
+                  <DetailRow icon={MapPin} label="Pays de résidence" value={currentUser?.location ?? "Non renseigné"} />
+                  <DetailRow icon={Mail} label="Email personnel" value={currentUser?.email ?? "Non renseigné"} muted={!currentUser?.email} />
+                  <DetailRow icon={Phone} label="Téléphone personnel" value={currentUser?.phone ?? "Non renseigné"} muted={!currentUser?.phone} />
+                  <DetailRow icon={MapPin} label="Adresse postale" value={currentUser?.address ?? "Non renseignée"} muted={!currentUser?.address} />
+                  <DetailRow icon={BadgeCheck} label="Statut du compte" value={currentUser?.status ?? "Non renseigné"} />
+                  <DetailRow icon={Clock3} label="Dernière connexion" value={lastConnection} muted={lastConnection === "Non renseignée"} />
+                </div>
+              )}
             </SectionCard>
           </motion.div>
 
@@ -254,13 +382,15 @@ export default function Settings() {
               <div className="divide-y divide-gray-100">
                 <DetailRow icon={User} label="Gestionnaire attitré" value={currentUser?.manager ?? "Non renseigné"} />
                 <DetailRow icon={MapPin} label="Zone de suivi" value={currentUser?.location ?? "Non renseignée"} />
-                <DetailRow icon={Mail} label="Email professionnel" value="Non renseigné" muted />
-                <DetailRow icon={Phone} label="Téléphone professionnel" value="Non renseigné" muted />
+                <DetailRow icon={Mail} label="Email professionnel" value={currentUser?.managerEmail ?? "Non renseigné"} muted={!currentUser?.managerEmail} />
+                <DetailRow icon={Phone} label="Téléphone professionnel" value={currentUser?.managerPhone ?? "Non renseigné"} muted={!currentUser?.managerPhone} />
               </div>
-              <div className="mt-4 flex items-start gap-2 rounded-xl bg-amber-50 px-3.5 py-3 text-xs leading-relaxed text-amber-700">
-                <AlertCircle size={15} className="mt-0.5 shrink-0" />
-                <p>Les coordonnées directes du gestionnaire ne sont pas encore renseignées dans ce profil de démonstration.</p>
-              </div>
+              {(!currentUser?.managerEmail || !currentUser?.managerPhone) && (
+                <div className="mt-4 flex items-start gap-2 rounded-xl bg-amber-50 px-3.5 py-3 text-xs leading-relaxed text-amber-700">
+                  <AlertCircle size={15} className="mt-0.5 shrink-0" />
+                  <p>Les coordonnées manquantes du gestionnaire peuvent être ajoutées avec le bouton « Modifier » dans la fiche du propriétaire.</p>
+                </div>
+              )}
             </SectionCard>
           </motion.div>
 
@@ -299,6 +429,7 @@ export default function Settings() {
             >
               <div className="divide-y divide-gray-100">
                 <DetailRow icon={Landmark} label="Établissement" value={currentUser?.rib.bankName ?? "Non renseigné"} />
+                <DetailRow icon={MapPin} label="Domiciliation bancaire" value={currentUser?.rib.bankAddress ?? "Non renseignée"} />
                 <DetailRow icon={Hash} label="IBAN" value={revealed.iban ? iban || "Non renseigné" : maskedIban} action={iban ? (
                   <div className="mt-1 flex items-center gap-0.5">
                     <button type="button" onClick={() => toggleVisibility("iban")} aria-label={revealed.iban ? "Masquer l'IBAN" : "Afficher l'IBAN"} className="rounded-lg p-2 text-gray-400 transition-colors hover:bg-gray-50 hover:text-[#1BA098]">

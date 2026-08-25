@@ -24,6 +24,11 @@ export type DefaultUser = {
   prenom: string;
   location: string;
   manager: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  managerEmail?: string;
+  managerPhone?: string;
   status: string;
   lastConnection: string;
   accounts: Account[];
@@ -45,6 +50,7 @@ export type DefaultUser = {
     key: string;
     iban: string;
     swift: string;
+    bankAddress?: string;
   };
 };
 
@@ -7797,7 +7803,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101332",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "Maroc",
+    "location": "France",
     "manager": "Marc Durand",
     "status": "Actif",
     "lastConnection": "",
@@ -7964,11 +7970,44 @@ export const DEFAULT_USER_COUNT = DEFAULT_USERS.length;
 const cloneUsers = (users: DefaultUser[]): DefaultUser[] =>
   JSON.parse(JSON.stringify(users)) as DefaultUser[];
 
+const slugifyName = (value: string) =>
+  value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ".")
+    .replace(/^\.|\.$/g, "");
+
+const withDefaultProfileData = (user: DefaultUser): DefaultUser => {
+  const emailSlug = `${slugifyName(user.prenom)}.${slugifyName(user.nom)}`;
+
+  return {
+    ...user,
+    email: user.email ?? `${emailSlug}@exemple.fr`,
+    phone: user.phone ?? "+33 6 12 34 56 78",
+    address: user.address ?? "12 rue de la République, 75001 Paris",
+    managerEmail: user.managerEmail ?? "marc.durand@exemple.fr",
+    managerPhone: user.managerPhone ?? "+33 1 45 67 89 00",
+    rib: {
+      ...user.rib,
+      bankAddress: user.rib.bankAddress ?? `Agence principale — 12 rue de la République, 75001 Paris`,
+    },
+  };
+};
+
 export const getPersistedUsers = (): DefaultUser[] => {
-  // defaultUsers.ts est la source unique des données affichées.
-  // Les valeurs modifiées puis commitée dans ce fichier sont donc utilisées
-  // après chaque nouvelle compilation ou nouveau déploiement.
-  return DEFAULT_USERS;
+  if (typeof window === "undefined") return DEFAULT_USERS.map(withDefaultProfileData);
+
+  const storedUsers = localStorage.getItem(PERSISTED_USERS_KEY);
+  if (!storedUsers) return DEFAULT_USERS.map(withDefaultProfileData);
+
+  try {
+    const parsedUsers = JSON.parse(storedUsers) as DefaultUser[];
+    return Array.isArray(parsedUsers) ? parsedUsers.map(withDefaultProfileData) : DEFAULT_USERS.map(withDefaultProfileData);
+  } catch {
+    localStorage.removeItem(PERSISTED_USERS_KEY);
+    return DEFAULT_USERS.map(withDefaultProfileData);
+  }
 };
 
 export const savePersistedUser = (updatedUser: DefaultUser): DefaultUser => {
