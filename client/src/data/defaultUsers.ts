@@ -7867,13 +7867,13 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "BNP PARIBAS",
+      "bankName": "CREDIT AGRICOLE",
       "bankCode": "30004",
       "branchCode": "100",
       "accountNumber": "5435012398",
       "key": "10",
-      "iban": "FR76 3000 4100 5435012398 10",
-      "swift": "BNPAFRPPXXX"
+      "iban": "MA76 3000 4100 5435012398 10",
+      "swift": "CRAGAFRPPXXX"
     }
   },
   {
