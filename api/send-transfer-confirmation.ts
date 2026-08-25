@@ -105,9 +105,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const { firstName, lastName, iban, swift, bankCode, amount, email, label } = req.body ?? {};
   const transferAmount = Number(amount);
-  const smtpUser = process.env.SMTP_USER;
-  const smtpPassword = process.env.SMTP_PASSWORD;
-  const fromAddress = process.env.SMTP_FROM || smtpUser;
+  // Les deux formats sont acceptés : noms SMTP standards et noms déjà créés dans Vercel.
+  const smtpUser = process.env.SMTP_USER || process.env["EMAIL_USER"] || process.env["UTILISATEUR_EMAIL"];
+  const smtpPassword = process.env.SMTP_PASSWORD || process.env["EMAIL_PASS"];
+  const fromAddress = process.env.SMTP_FROM || process.env["EMAIL_FROM"] || smtpUser;
+  const smtpHost = process.env.SMTP_HOST || process.env["EMAIL_HOST"] || process.env["HÔTE_DE_MAIL"] || "smtp.gmail.com";
+  const smtpPort = Number(process.env.SMTP_PORT || process.env["EMAIL_PORT"] || process.env["PORT_EMAIL"] || 465);
+  const smtpSecureValue = process.env.SMTP_SECURE || process.env["EMAIL_SECURE"] || process.env["EMAIL_SÉCURISÉ"];
+  const smtpSecure = smtpSecureValue ? smtpSecureValue === "true" : smtpPort === 465;
 
   if (!firstName || !lastName || !iban || !swift || !bankCode || !email || !Number.isFinite(transferAmount) || transferAmount <= 0) {
     return res.status(400).json({ message: "Les informations du virement sont incomplètes." });
@@ -115,15 +120,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (!smtpUser || !smtpPassword || !fromAddress) {
     return res.status(503).json({
-      message: "Le service email n’est pas configuré. Ajoutez SMTP_USER, SMTP_PASSWORD et SMTP_FROM dans Vercel.",
+      message: "Le service email n’est pas configuré. Vérifiez EMAIL_HOST, EMAIL_PORT, EMAIL_SECURE, EMAIL_USER, EMAIL_PASS et EMAIL_FROM dans Vercel.",
     });
   }
 
-  const smtpPort = Number(process.env.SMTP_PORT || 465);
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST || "smtp.gmail.com",
+    host: smtpHost,
     port: smtpPort,
-    secure: process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : smtpPort === 465,
+    secure: smtpSecure,
     auth: { user: smtpUser, pass: smtpPassword },
   });
 
