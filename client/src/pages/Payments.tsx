@@ -10,6 +10,15 @@ import {
   Send,
 } from "lucide-react";
 import { FormEvent, useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import { getAuthenticatedUser, savePersistedUser } from "../data/defaultUsers";
 
 const recentPayments = [
@@ -21,6 +30,16 @@ const recentPayments = [
 
 const inputClassName =
   "w-full rounded-2xl border border-gray-200 bg-white px-4 py-3.5 text-sm text-gray-800 outline-none transition focus:border-[#1BA098] focus:ring-2 focus:ring-[#1BA098]/15";
+
+type ReceiptData = {
+  firstName: string;
+  lastName: string;
+  iban: string;
+  swift: string;
+  bankCode: string;
+  amount: number;
+  label: string;
+};
 
 export default function Payments() {
   const currentUser = getAuthenticatedUser();
@@ -44,9 +63,11 @@ export default function Payments() {
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState<"error" | "success" | "">("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [receiptData, setReceiptData] = useState<ReceiptData | null>(null);
 
   const formatCurrency = (value: number) =>
-    new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(value);
+    new Intl.NumberFormat("fr-MA", { style: "currency", currency: "MAD" }).format(value);
 
   const resetForm = () => {
     setFirstName("");
@@ -72,7 +93,7 @@ export default function Payments() {
 
     if (!Number.isFinite(transferAmount) || transferAmount <= 0) {
       setMessageType("error");
-      setMessage("Veuillez saisir un montant supérieur à 0 €.");
+      setMessage("Veuillez saisir un montant supérieur à 0 MAD.");
       return;
     }
 
@@ -135,8 +156,17 @@ export default function Payments() {
       };
 
       savePersistedUser(updatedUser);
-      setMessageType("success");
-      setMessage(`Virement de ${formatCurrency(transferAmount)} effectué. L’email de confirmation a été envoyé.`);
+      setReceiptData({
+        firstName,
+        lastName,
+        iban,
+        swift,
+        bankCode,
+        amount: transferAmount,
+        label: label.trim() || "Virement",
+      });
+      setShowSuccessModal(true);
+      setMessage("");
       resetForm();
     } catch (error) {
       setMessageType("error");
@@ -221,22 +251,22 @@ export default function Payments() {
 
                 <div>
                   <label htmlFor="iban" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">IBAN du compte destinataire</label>
-                  <input id="iban" type="text" required placeholder="FR76 3000..." value={iban} onChange={(event) => setIban(event.target.value.toUpperCase())} className={`${inputClassName} font-mono tracking-wide`} />
+                  <input id="iban" type="text" required placeholder="MA64 2250 1000 5435 0123 1810" value={iban} onChange={(event) => setIban(event.target.value.toUpperCase())} className={`${inputClassName} font-mono tracking-wide`} />
                 </div>
 
                 <div>
                   <label htmlFor="swift" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Code Swift / BIC</label>
-                  <input id="swift" type="text" required placeholder="Ex : CRLYFRPPXXX" value={swift} onChange={(event) => setSwift(event.target.value.toUpperCase())} className={`${inputClassName} font-mono`} />
+                  <input id="swift" type="text" required placeholder="Ex : CNCAMAMRXXX" value={swift} onChange={(event) => setSwift(event.target.value.toUpperCase())} className={`${inputClassName} font-mono`} />
                 </div>
 
                 <div>
                   <label htmlFor="banque" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Code banque</label>
-                  <input id="banque" type="text" required placeholder="Ex : 30004" value={bankCode} onChange={(event) => setBankCode(event.target.value.replace(/[^0-9]/g, ""))} className={inputClassName} />
+                  <input id="banque" type="text" required placeholder="Ex : 225" value={bankCode} onChange={(event) => setBankCode(event.target.value.replace(/[^0-9]/g, ""))} className={inputClassName} />
                 </div>
 
                 <div>
-                  <label htmlFor="montant" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Montant (€)</label>
-                  <input id="montant" type="number" required min="1" step="0.01" placeholder="Ex : 150.00" value={amount} onChange={(event) => setAmount(event.target.value)} className={`${inputClassName} font-bold`} />
+                  <label htmlFor="montant" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Montant (MAD)</label>
+                  <input id="montant" type="number" required min="1" step="0.01" placeholder="Ex : 1 500.00" value={amount} onChange={(event) => setAmount(event.target.value)} className={`${inputClassName} font-bold`} />
                 </div>
 
                 <div>
@@ -300,6 +330,48 @@ export default function Payments() {
           ))}
         </div>
       )}
+
+      <Dialog open={showSuccessModal} onOpenChange={setShowSuccessModal}>
+        <DialogContent className="max-w-md overflow-hidden rounded-[28px] border-0 p-0 shadow-2xl">
+          <div className="h-1.5 bg-[#e3313d]" />
+          <div className="bg-[#006b4f] px-6 py-5 text-white">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#b7d9cf]">Crédit Agricole du Maroc</p>
+            <p className="mt-1 text-sm font-semibold">Confirmation de virement</p>
+          </div>
+          <div className="space-y-5 p-6">
+            <DialogHeader className="items-center text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+                <CheckCircle2 size={34} strokeWidth={2.5} />
+              </div>
+              <DialogTitle className="mt-1 text-2xl font-extrabold text-gray-900">Virement effectué</DialogTitle>
+              <DialogDescription className="text-sm leading-6 text-gray-500">
+                Votre opération a été enregistrée avec succès et l’email de confirmation a été envoyé.
+              </DialogDescription>
+            </DialogHeader>
+
+            {receiptData && (
+              <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4 text-sm">
+                <div className="mb-3 flex items-center justify-between border-b border-gray-200 pb-3">
+                  <span className="text-gray-500">Montant</span>
+                  <span className="text-lg font-extrabold text-[#006b4f]">{formatCurrency(receiptData.amount)}</span>
+                </div>
+                <div className="space-y-2.5">
+                  <div className="flex justify-between gap-4"><span className="text-gray-500">Bénéficiaire</span><span className="text-right font-semibold text-gray-800">{receiptData.firstName} {receiptData.lastName}</span></div>
+                  <div className="flex justify-between gap-4"><span className="text-gray-500">IBAN</span><span className="max-w-[220px] break-all text-right font-mono text-xs font-semibold text-gray-800">{receiptData.iban}</span></div>
+                  <div className="flex justify-between gap-4"><span className="text-gray-500">Libellé</span><span className="text-right font-semibold text-gray-800">{receiptData.label}</span></div>
+                  <div className="flex justify-between gap-4"><span className="text-gray-500">Statut email</span><span className="font-semibold text-emerald-600">Envoyé</span></div>
+                </div>
+              </div>
+            )}
+
+            <DialogFooter>
+              <Button type="button" onClick={() => setShowSuccessModal(false)} className="w-full rounded-2xl bg-[#1BA098] py-6 font-bold text-white hover:bg-[#168b85]">
+                Fermer
+              </Button>
+            </DialogFooter>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       <BottomNav />
     </div>
