@@ -163,7 +163,7 @@ export default function Cards() {
             <span className="rounded-full bg-[#e9f7f5] px-3 py-1 text-xs font-semibold text-[#1b7e76]">{displayedCards.length} cartes</span>
           </div>
 
-          <div className="-mx-1 flex gap-4 overflow-x-auto px-1 pb-4 pt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex gap-4 overflow-x-auto px-2 pb-4 pt-2 scroll-px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {displayedCards.map((card, i) => (
               <motion.button
                 key={card.id}
@@ -173,7 +173,7 @@ export default function Cards() {
                 transition={{ duration: 0.35, delay: i * 0.1 }}
                 onClick={() => setSelectedCard(i)}
                 aria-pressed={selectedCard === i}
-                className={`group relative w-[310px] shrink-0 text-left transition-all duration-200 sm:w-[320px] ${
+                className={`group relative w-[min(320px,calc(100vw-4rem))] shrink-0 text-left transition-all duration-200 ${
                   selectedCard === i ? "scale-[1.015]" : "opacity-75 hover:opacity-100"
                 }`}
               >
