@@ -29,6 +29,7 @@ export type DefaultUser = {
   address?: string;
   managerEmail?: string;
   managerPhone?: string;
+  managerAgency?: string;
   status: string;
   lastConnection: string;
   accounts: Account[];
@@ -63,6 +64,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Jean",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "jean.dupont@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -131,7 +138,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012300",
       "key": "10",
       "iban": "FR76 3000 4100 5435012300 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -142,6 +150,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Marie",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "marie.martin@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -210,7 +224,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012301",
       "key": "10",
       "iban": "FR76 3000 4100 5435012301 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -221,6 +236,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Pierre",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "pierre.bernard@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -289,7 +310,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012302",
       "key": "10",
       "iban": "FR76 3000 4100 5435012302 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -300,6 +322,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Sophie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "sophie.thomas@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -368,7 +396,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012303",
       "key": "10",
       "iban": "FR76 3000 4100 5435012303 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -379,6 +408,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Lucas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "lucas.robert@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -447,7 +482,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012304",
       "key": "10",
       "iban": "FR76 3000 4100 5435012304 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -458,6 +494,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Camille",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "camille.petit@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -526,7 +568,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012305",
       "key": "10",
       "iban": "FR76 3000 4100 5435012305 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -537,6 +580,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Thomas",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "thomas.durand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -605,7 +654,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012306",
       "key": "10",
       "iban": "FR76 3000 4100 5435012306 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -616,6 +666,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Emma",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "emma.leroy@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -684,7 +740,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012307",
       "key": "10",
       "iban": "FR76 3000 4100 5435012307 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -695,6 +752,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Nicolas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "nicolas.moreau@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -763,7 +826,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012308",
       "key": "10",
       "iban": "FR76 3000 4100 5435012308 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -774,6 +838,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Chloé",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "chloe.simon@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -842,7 +912,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012309",
       "key": "10",
       "iban": "FR76 3000 4100 5435012309 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -853,6 +924,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Julien",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "julien.laurent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -921,7 +998,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012310",
       "key": "10",
       "iban": "FR76 3000 4100 5435012310 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -932,6 +1010,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Léa",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "lea.lefebvre@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1000,7 +1084,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012311",
       "key": "10",
       "iban": "FR76 3000 4100 5435012311 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1011,6 +1096,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Antoine",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "antoine.michel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1079,7 +1170,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012312",
       "key": "10",
       "iban": "FR76 3000 4100 5435012312 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1090,6 +1182,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Manon",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "manon.garcia@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1158,7 +1256,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012313",
       "key": "10",
       "iban": "FR76 3000 4100 5435012313 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1169,6 +1268,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Hugo",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "hugo.david@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1237,7 +1342,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012314",
       "key": "10",
       "iban": "FR76 3000 4100 5435012314 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1248,6 +1354,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Clara",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "clara.bertrand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1316,7 +1428,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012315",
       "key": "10",
       "iban": "FR76 3000 4100 5435012315 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1327,6 +1440,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Alexandre",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "alexandre.roux@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1395,7 +1514,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012316",
       "key": "10",
       "iban": "FR76 3000 4100 5435012316 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1406,6 +1526,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Inès",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "ines.vincent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1474,7 +1600,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012317",
       "key": "10",
       "iban": "FR76 3000 4100 5435012317 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1485,6 +1612,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Maxime",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "maxime.fournier@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1553,7 +1686,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012318",
       "key": "10",
       "iban": "FR76 3000 4100 5435012318 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1564,6 +1698,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Élodie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "elodie.morel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1632,7 +1772,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012319",
       "key": "10",
       "iban": "FR76 3000 4100 5435012319 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1643,6 +1784,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Jean",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "jean.dupont@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1711,7 +1858,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012320",
       "key": "10",
       "iban": "FR76 3000 4100 5435012320 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1722,6 +1870,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Marie",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "marie.martin@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1790,7 +1944,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012321",
       "key": "10",
       "iban": "FR76 3000 4100 5435012321 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1801,6 +1956,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Pierre",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "pierre.bernard@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1869,7 +2030,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012322",
       "key": "10",
       "iban": "FR76 3000 4100 5435012322 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1880,6 +2042,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Sophie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "sophie.thomas@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -1948,7 +2116,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012323",
       "key": "10",
       "iban": "FR76 3000 4100 5435012323 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -1959,6 +2128,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Lucas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "lucas.robert@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2027,7 +2202,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012324",
       "key": "10",
       "iban": "FR76 3000 4100 5435012324 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2038,6 +2214,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Camille",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "camille.petit@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2106,7 +2288,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012325",
       "key": "10",
       "iban": "FR76 3000 4100 5435012325 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2117,6 +2300,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Thomas",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "thomas.durand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2185,7 +2374,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012326",
       "key": "10",
       "iban": "FR76 3000 4100 5435012326 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2196,6 +2386,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Emma",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "emma.leroy@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2264,7 +2460,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012327",
       "key": "10",
       "iban": "FR76 3000 4100 5435012327 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2275,6 +2472,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Nicolas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "nicolas.moreau@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2343,7 +2546,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012328",
       "key": "10",
       "iban": "FR76 3000 4100 5435012328 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2354,6 +2558,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Chloé",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "chloe.simon@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2422,7 +2632,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012329",
       "key": "10",
       "iban": "FR76 3000 4100 5435012329 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2433,6 +2644,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Julien",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "julien.laurent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2501,7 +2718,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012330",
       "key": "10",
       "iban": "FR76 3000 4100 5435012330 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2512,6 +2730,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Léa",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "lea.lefebvre@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2580,7 +2804,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012331",
       "key": "10",
       "iban": "FR76 3000 4100 5435012331 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2591,6 +2816,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Antoine",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "antoine.michel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2659,7 +2890,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012332",
       "key": "10",
       "iban": "FR76 3000 4100 5435012332 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2670,6 +2902,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Manon",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "manon.garcia@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2738,7 +2976,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012333",
       "key": "10",
       "iban": "FR76 3000 4100 5435012333 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2749,6 +2988,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Hugo",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "hugo.david@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2817,7 +3062,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012334",
       "key": "10",
       "iban": "FR76 3000 4100 5435012334 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2828,6 +3074,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Clara",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "clara.bertrand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2896,7 +3148,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012335",
       "key": "10",
       "iban": "FR76 3000 4100 5435012335 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2907,6 +3160,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Alexandre",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "alexandre.roux@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -2975,7 +3234,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012336",
       "key": "10",
       "iban": "FR76 3000 4100 5435012336 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -2986,6 +3246,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Inès",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "ines.vincent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3054,7 +3320,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012337",
       "key": "10",
       "iban": "FR76 3000 4100 5435012337 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3065,6 +3332,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Maxime",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "maxime.fournier@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3133,7 +3406,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012338",
       "key": "10",
       "iban": "FR76 3000 4100 5435012338 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3144,6 +3418,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Élodie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "elodie.morel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3212,7 +3492,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012339",
       "key": "10",
       "iban": "FR76 3000 4100 5435012339 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3223,6 +3504,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Jean",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "jean.dupont@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3291,7 +3578,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012340",
       "key": "10",
       "iban": "FR76 3000 4100 5435012340 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3302,6 +3590,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Marie",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "marie.martin@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3370,7 +3664,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012341",
       "key": "10",
       "iban": "FR76 3000 4100 5435012341 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3381,6 +3676,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Pierre",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "pierre.bernard@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3449,7 +3750,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012342",
       "key": "10",
       "iban": "FR76 3000 4100 5435012342 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3460,6 +3762,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Sophie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "sophie.thomas@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3528,7 +3836,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012343",
       "key": "10",
       "iban": "FR76 3000 4100 5435012343 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3539,6 +3848,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Lucas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "lucas.robert@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3607,7 +3922,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012344",
       "key": "10",
       "iban": "FR76 3000 4100 5435012344 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3618,6 +3934,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Camille",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "camille.petit@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3686,7 +4008,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012345",
       "key": "10",
       "iban": "FR76 3000 4100 5435012345 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3697,6 +4020,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Thomas",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "thomas.durand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3765,7 +4094,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012346",
       "key": "10",
       "iban": "FR76 3000 4100 5435012346 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3776,6 +4106,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Emma",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "emma.leroy@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3844,7 +4180,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012347",
       "key": "10",
       "iban": "FR76 3000 4100 5435012347 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3855,6 +4192,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Nicolas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "nicolas.moreau@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -3923,7 +4266,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012348",
       "key": "10",
       "iban": "FR76 3000 4100 5435012348 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -3934,6 +4278,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Chloé",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "chloe.simon@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4002,7 +4352,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012349",
       "key": "10",
       "iban": "FR76 3000 4100 5435012349 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4013,6 +4364,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Julien",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "julien.laurent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4081,7 +4438,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012350",
       "key": "10",
       "iban": "FR76 3000 4100 5435012350 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4092,6 +4450,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Léa",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "lea.lefebvre@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4160,7 +4524,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012351",
       "key": "10",
       "iban": "FR76 3000 4100 5435012351 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4171,6 +4536,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Antoine",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "antoine.michel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4239,7 +4610,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012352",
       "key": "10",
       "iban": "FR76 3000 4100 5435012352 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4250,6 +4622,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Manon",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "manon.garcia@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4318,7 +4696,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012353",
       "key": "10",
       "iban": "FR76 3000 4100 5435012353 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4329,6 +4708,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Hugo",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "hugo.david@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4397,7 +4782,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012354",
       "key": "10",
       "iban": "FR76 3000 4100 5435012354 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4408,6 +4794,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Clara",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "clara.bertrand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4476,7 +4868,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012355",
       "key": "10",
       "iban": "FR76 3000 4100 5435012355 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4487,6 +4880,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Alexandre",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "alexandre.roux@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4555,7 +4954,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012356",
       "key": "10",
       "iban": "FR76 3000 4100 5435012356 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4566,6 +4966,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Inès",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "ines.vincent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4634,7 +5040,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012357",
       "key": "10",
       "iban": "FR76 3000 4100 5435012357 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4645,6 +5052,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Maxime",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "maxime.fournier@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4713,7 +5126,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012358",
       "key": "10",
       "iban": "FR76 3000 4100 5435012358 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4724,6 +5138,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Élodie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "elodie.morel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4792,7 +5212,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012359",
       "key": "10",
       "iban": "FR76 3000 4100 5435012359 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4803,6 +5224,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Jean",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "jean.dupont@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4871,7 +5298,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012360",
       "key": "10",
       "iban": "FR76 3000 4100 5435012360 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4882,6 +5310,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Marie",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "marie.martin@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -4950,7 +5384,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012361",
       "key": "10",
       "iban": "FR76 3000 4100 5435012361 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -4961,6 +5396,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Pierre",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "pierre.bernard@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5029,7 +5470,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012362",
       "key": "10",
       "iban": "FR76 3000 4100 5435012362 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5040,6 +5482,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Sophie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "sophie.thomas@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5108,7 +5556,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012363",
       "key": "10",
       "iban": "FR76 3000 4100 5435012363 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5119,6 +5568,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Lucas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "lucas.robert@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5187,7 +5642,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012364",
       "key": "10",
       "iban": "FR76 3000 4100 5435012364 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5198,6 +5654,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Camille",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "camille.petit@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5266,7 +5728,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012365",
       "key": "10",
       "iban": "FR76 3000 4100 5435012365 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5277,6 +5740,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Thomas",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "thomas.durand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5345,7 +5814,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012366",
       "key": "10",
       "iban": "FR76 3000 4100 5435012366 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5356,6 +5826,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Emma",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "emma.leroy@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5424,7 +5900,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012367",
       "key": "10",
       "iban": "FR76 3000 4100 5435012367 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5435,6 +5912,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Nicolas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "nicolas.moreau@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5503,7 +5986,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012368",
       "key": "10",
       "iban": "FR76 3000 4100 5435012368 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5514,6 +5998,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Chloé",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "chloe.simon@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5582,7 +6072,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012369",
       "key": "10",
       "iban": "FR76 3000 4100 5435012369 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5593,6 +6084,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Julien",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "julien.laurent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5661,7 +6158,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012370",
       "key": "10",
       "iban": "FR76 3000 4100 5435012370 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5672,6 +6170,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Léa",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "lea.lefebvre@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5740,7 +6244,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012371",
       "key": "10",
       "iban": "FR76 3000 4100 5435012371 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5751,6 +6256,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Antoine",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "antoine.michel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5819,7 +6330,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012372",
       "key": "10",
       "iban": "FR76 3000 4100 5435012372 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5830,6 +6342,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Manon",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "manon.garcia@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5898,7 +6416,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012373",
       "key": "10",
       "iban": "FR76 3000 4100 5435012373 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5909,6 +6428,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Hugo",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "hugo.david@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -5977,7 +6502,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012374",
       "key": "10",
       "iban": "FR76 3000 4100 5435012374 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -5988,6 +6514,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Clara",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "clara.bertrand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6056,7 +6588,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012375",
       "key": "10",
       "iban": "FR76 3000 4100 5435012375 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6067,6 +6600,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Alexandre",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "alexandre.roux@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6135,7 +6674,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012376",
       "key": "10",
       "iban": "FR76 3000 4100 5435012376 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6146,6 +6686,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Inès",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "ines.vincent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6214,7 +6760,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012377",
       "key": "10",
       "iban": "FR76 3000 4100 5435012377 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6225,6 +6772,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Maxime",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "maxime.fournier@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6293,7 +6846,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012378",
       "key": "10",
       "iban": "FR76 3000 4100 5435012378 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6304,6 +6858,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Élodie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "elodie.morel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6372,7 +6932,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012379",
       "key": "10",
       "iban": "FR76 3000 4100 5435012379 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6383,6 +6944,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Jean",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "jean.dupont@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6451,7 +7018,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012380",
       "key": "10",
       "iban": "FR76 3000 4100 5435012380 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6462,6 +7030,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Marie",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "marie.martin@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6530,7 +7104,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012381",
       "key": "10",
       "iban": "FR76 3000 4100 5435012381 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6541,6 +7116,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Pierre",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "pierre.bernard@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6609,7 +7190,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012382",
       "key": "10",
       "iban": "FR76 3000 4100 5435012382 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6620,6 +7202,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Sophie",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "sophie.thomas@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6688,7 +7276,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012383",
       "key": "10",
       "iban": "FR76 3000 4100 5435012383 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6699,6 +7288,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Lucas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "lucas.robert@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6767,7 +7362,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012384",
       "key": "10",
       "iban": "FR76 3000 4100 5435012384 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6778,6 +7374,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Camille",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "camille.petit@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6846,7 +7448,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012385",
       "key": "10",
       "iban": "FR76 3000 4100 5435012385 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6857,6 +7460,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Thomas",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "thomas.durand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -6925,7 +7534,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012386",
       "key": "10",
       "iban": "FR76 3000 4100 5435012386 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -6936,6 +7546,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Emma",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "emma.leroy@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7004,7 +7620,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012387",
       "key": "10",
       "iban": "FR76 3000 4100 5435012387 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7015,6 +7632,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Nicolas",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "nicolas.moreau@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7083,7 +7706,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012388",
       "key": "10",
       "iban": "FR76 3000 4100 5435012388 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7094,6 +7718,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Chloé",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "chloe.simon@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7162,7 +7792,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012389",
       "key": "10",
       "iban": "FR76 3000 4100 5435012389 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7173,6 +7804,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Julien",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "julien.laurent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7241,7 +7878,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012390",
       "key": "10",
       "iban": "FR76 3000 4100 5435012390 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7252,6 +7890,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Léa",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "lea.lefebvre@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7320,7 +7964,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012391",
       "key": "10",
       "iban": "FR76 3000 4100 5435012391 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7331,6 +7976,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Antoine",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "antoine.michel@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7399,7 +8050,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012392",
       "key": "10",
       "iban": "FR76 3000 4100 5435012392 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7410,6 +8062,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Manon",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "manon.garcia@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7478,7 +8136,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012393",
       "key": "10",
       "iban": "FR76 3000 4100 5435012393 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7489,6 +8148,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Hugo",
     "location": "France",
     "manager": "Marc Durand",
+    "email": "hugo.david@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7557,7 +8222,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012394",
       "key": "10",
       "iban": "FR76 3000 4100 5435012394 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7568,6 +8234,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Clara",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "clara.bertrand@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7636,7 +8308,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012395",
       "key": "10",
       "iban": "FR76 3000 4100 5435012395 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7647,6 +8320,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Alexandre",
     "location": "France",
     "manager": "Arnaud Leroy",
+    "email": "alexandre.roux@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "arnaud.leroy@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7715,7 +8394,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012396",
       "key": "10",
       "iban": "FR76 3000 4100 5435012396 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7726,6 +8406,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Inès",
     "location": "France",
     "manager": "Sophie Bernard",
+    "email": "ines.vincent@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "sophie.bernard@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7794,7 +8480,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012397",
       "key": "10",
       "iban": "FR76 3000 4100 5435012397 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -7805,6 +8492,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Maxime",
     "location": "Maroc",
     "manager": "Marc Durand",
+    "email": "maxime.fournier@exemple.fr",
+    "phone": "+212 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Maroc",
+    "managerEmail": "marc.durand@exemple.fr",
+    "managerPhone": "+212 1 45 67 89 00",
+    "managerAgency": "Agence principale — Maroc",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7867,13 +8560,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "CREDIT AGRICOLE",
+      "bankName": "CRÉDIT AGRICOLE",
       "bankCode": "30004",
       "branchCode": "100",
-      "accountNumber": "5435012398",
+      "accountNumber": "5435012399",
       "key": "10",
-      "iban": "MA76 3000 4100 5435012398 10",
-      "swift": "CRAGAFRPPXXX"
+      "iban": "MA76 3000 4100 5435012399 10",
+      "swift": "CREDAFRPPXXX",
+      "bankAddress": "Agence principale — MAROC"
     }
   },
   {
@@ -7884,6 +8578,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "prenom": "Frederic",
     "location": "France",
     "manager": "Claire Martin",
+    "email": "frederic.drome@exemple.fr",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
+    "managerEmail": "claire.martin@exemple.fr",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -7952,7 +8652,8 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "accountNumber": "5435012399",
       "key": "10",
       "iban": "FR76 3000 4100 5435012399 10",
-      "swift": "BNPAFRPPXXX"
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   }
 ];
@@ -7988,6 +8689,7 @@ const withDefaultProfileData = (user: DefaultUser): DefaultUser => {
     address: user.address ?? "12 rue de la République, 75001 Paris",
     managerEmail: user.managerEmail ?? "marc.durand@exemple.fr",
     managerPhone: user.managerPhone ?? "+33 1 45 67 89 00",
+    managerAgency: user.managerAgency ?? "Agence principale — Paris Centre",
     rib: {
       ...user.rib,
       bankAddress: user.rib.bankAddress ?? `Agence principale — 12 rue de la République, 75001 Paris`,
