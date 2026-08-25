@@ -10,8 +10,7 @@ type CardBrandName = "VISA" | "mastercard";
 
 type CardDesign = {
   id: number;
-  linkedAccountId: string;
-  fallbackName: string;
+  accountIndex: number;
   number: string;
   balance: number;
   color: string;
@@ -31,8 +30,7 @@ const accounts = [
 const cardDesigns: CardDesign[] = [
   {
     id: 1,
-    linkedAccountId: "cc",
-    fallbackName: "Compte Courant",
+    accountIndex: 0,
     number: "•••• •••• •••• 4521",
     balance: 1247.30,
     color: "from-[#087f79] via-[#16a39a] to-[#82d1c5]",
@@ -44,8 +42,7 @@ const cardDesigns: CardDesign[] = [
   },
   {
     id: 2,
-    linkedAccountId: "livret",
-    fallbackName: "Livret A",
+    accountIndex: 1,
     number: "•••• •••• •••• 8834",
     balance: 520.80,
     color: "from-[#252d3d] via-[#101827] to-[#050914]",
@@ -112,11 +109,12 @@ export default function Accounts() {
   const [selectedCard, setSelectedCard] = useState(0);
 
   const displayedCards = cardDesigns.map((card) => {
-    const linkedAccount = displayedAccounts.find((account) => String(account.id) === card.linkedAccountId);
+    const linkedAccount = displayedAccounts[card.accountIndex];
     return {
       ...card,
-      // Le nom affiché est toujours celui du compte réellement associé à la carte.
-      name: linkedAccount?.name ?? card.fallbackName,
+      // Le nom et le solde viennent directement du compte associé à cette carte.
+      name: linkedAccount?.name ?? "Compte non rattaché",
+      balance: linkedAccount?.balance ?? 0,
     };
   });
 

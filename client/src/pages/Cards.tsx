@@ -17,12 +17,13 @@ import {
   Wifi,
 } from "lucide-react";
 import { useState } from "react";
+import { getAuthenticatedUser } from "../data/defaultUsers";
 
 type ChipVariant = "gold" | "red";
 
 type CardModel = {
   id: number;
-  name: string;
+  accountIndex: number;
   number: string;
   fullNumber: string;
   expiry: string;
@@ -39,7 +40,7 @@ type CardModel = {
 const userCards: CardModel[] = [
   {
     id: 1,
-    name: "Visa Classic",
+    accountIndex: 0,
     number: "4532 •••• •••• 4521",
     fullNumber: "4532 7891 2345 4521",
     expiry: "12/28",
@@ -54,7 +55,7 @@ const userCards: CardModel[] = [
   },
   {
     id: 2,
-    name: "Mastercard Gold",
+    accountIndex: 1,
     number: "5412 •••• •••• 8834",
     fullNumber: "5412 6632 9876 8834",
     expiry: "06/27",
@@ -113,6 +114,15 @@ function CardBrand({ type }: { type: string }) {
 }
 
 export default function Cards() {
+  const currentUser = getAuthenticatedUser();
+  const displayedAccounts = currentUser?.accounts ?? [];
+  const displayedCards = userCards.map((card) => ({
+    ...card,
+    // Le nom et le solde visibles viennent directement du compte associé.
+    name: displayedAccounts[card.accountIndex]?.type ?? "Compte non rattaché",
+    balance: displayedAccounts[card.accountIndex]?.balance ?? 0,
+    holder: currentUser ? `${currentUser.prenom} ${currentUser.nom}`.toUpperCase() : card.holder,
+  }));
   const [selectedCard, setSelectedCard] = useState(0);
   const [controls, setControls] = useState(cardControls);
   const [showDetails, setShowDetails] = useState(false);
@@ -132,7 +142,7 @@ export default function Cards() {
     }
   };
 
-  const currentCard = userCards[selectedCard];
+  const currentCard = displayedCards[selectedCard];
 
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
@@ -150,11 +160,11 @@ export default function Cards() {
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#1BA098]">Portefeuille</p>
               <h2 className="mt-1 text-xl font-semibold text-gray-800">Vos cartes bancaires</h2>
             </div>
-            <span className="rounded-full bg-[#e9f7f5] px-3 py-1 text-xs font-semibold text-[#1b7e76]">{userCards.length} cartes</span>
+            <span className="rounded-full bg-[#e9f7f5] px-3 py-1 text-xs font-semibold text-[#1b7e76]">{displayedCards.length} cartes</span>
           </div>
 
           <div className="-mx-1 flex gap-4 overflow-x-auto px-1 pb-4 pt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {userCards.map((card, i) => (
+            {displayedCards.map((card, i) => (
               <motion.button
                 key={card.id}
                 type="button"
