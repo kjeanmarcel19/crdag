@@ -107,6 +107,9 @@ export default function Accounts() {
     : accounts;
   const [showBalances, setShowBalances] = useState(true);
   const [selectedCard, setSelectedCard] = useState(0);
+  const accountHolder = currentUser
+    ? `${currentUser.prenom} ${currentUser.nom}`.toUpperCase()
+    : "TITULAIRE DU COMPTE";
 
   const displayedCards = cardDesigns.map((card) => {
     const linkedAccount = displayedAccounts[card.accountIndex];
@@ -115,6 +118,7 @@ export default function Accounts() {
       // Le nom et le solde viennent directement du compte associé à cette carte.
       name: linkedAccount?.name ?? "Compte non rattaché",
       balance: linkedAccount?.balance ?? 0,
+      holder: accountHolder,
     };
   });
 
