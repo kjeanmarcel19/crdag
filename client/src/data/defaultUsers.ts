@@ -7803,7 +7803,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101332",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "France",
+    "location": "Maroc",
     "manager": "Marc Durand",
     "status": "Actif",
     "lastConnection": "",
