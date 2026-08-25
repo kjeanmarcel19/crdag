@@ -8490,14 +8490,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "codepersonnel": "101332",
     "nom": "Fournier",
     "prenom": "Maxime",
-    "location": "Maroc",
+    "location": "France",
     "manager": "Marc Durand",
     "email": "maxime.fournier@exemple.fr",
-    "phone": "+212 6 12 34 56 78",
-    "address": "12 rue de la République, 75001 Maroc",
+    "phone": "+33 6 12 34 56 78",
+    "address": "12 rue de la République, 75001 Paris",
     "managerEmail": "marc.durand@exemple.fr",
-    "managerPhone": "+212 1 45 67 89 00",
-    "managerAgency": "Agence principale — Maroc",
+    "managerPhone": "+33 1 45 67 89 00",
+    "managerAgency": "Agence principale — Paris Centre",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8560,14 +8560,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
       "withdrawalLimit": 1200
     },
     "rib": {
-      "bankName": "CRÉDIT AGRICOLE",
+      "bankName": "BNP PARIBAS",
       "bankCode": "30004",
       "branchCode": "100",
-      "accountNumber": "5435012399",
+      "accountNumber": "5435012398",
       "key": "10",
-      "iban": "MA76 3000 4100 5435012399 10",
-      "swift": "CREDAFRPPXXX",
-      "bankAddress": "Agence principale — MAROC"
+      "iban": "FR76 3000 4100 5435012398 10",
+      "swift": "BNPAFRPPXXX",
+      "bankAddress": "Agence principale — 12 rue de la République, 75001 Paris"
     }
   },
   {
@@ -8665,11 +8665,7 @@ export const findDefaultUser = (identifiant: string, codepersonnel: string) =>
 
 export const AUTH_SESSION_KEY = "credit-agricole-authenticated";
 export const AUTH_USER_KEY = "credit-agricole-current-user";
-export const PERSISTED_USERS_KEY = "credit-agricole-users-data";
 export const DEFAULT_USER_COUNT = DEFAULT_USERS.length;
-
-const cloneUsers = (users: DefaultUser[]): DefaultUser[] =>
-  JSON.parse(JSON.stringify(users)) as DefaultUser[];
 
 const slugifyName = (value: string) =>
   value
@@ -8692,39 +8688,19 @@ const withDefaultProfileData = (user: DefaultUser): DefaultUser => {
     managerAgency: user.managerAgency ?? "Agence principale — Paris Centre",
     rib: {
       ...user.rib,
-      bankAddress: user.rib.bankAddress ?? `Agence principale — 12 rue de la République, 75001 Paris`,
+      bankAddress: user.rib.bankAddress ?? "Agence principale — 12 rue de la République, 75001 Paris",
     },
   };
 };
 
-export const getPersistedUsers = (): DefaultUser[] => {
-  if (typeof window === "undefined") return DEFAULT_USERS.map(withDefaultProfileData);
+// defaultUsers.ts est la source unique des données de profil affichées par l’application.
+// Les valeurs modifiées dans DEFAULT_USERS sont donc relues directement après chaque compilation.
+export const getPersistedUsers = (): DefaultUser[] => DEFAULT_USERS.map(withDefaultProfileData);
 
-  const storedUsers = localStorage.getItem(PERSISTED_USERS_KEY);
-  if (!storedUsers) return DEFAULT_USERS.map(withDefaultProfileData);
-
-  try {
-    const parsedUsers = JSON.parse(storedUsers) as DefaultUser[];
-    return Array.isArray(parsedUsers) ? parsedUsers.map(withDefaultProfileData) : DEFAULT_USERS.map(withDefaultProfileData);
-  } catch {
-    localStorage.removeItem(PERSISTED_USERS_KEY);
-    return DEFAULT_USERS.map(withDefaultProfileData);
-  }
-};
-
+// Les virements peuvent conserver leurs comptes et transactions pendant la session,
+// sans écraser les données de profil définies dans DEFAULT_USERS.
 export const savePersistedUser = (updatedUser: DefaultUser): DefaultUser => {
-  if (typeof window === "undefined") return updatedUser;
-
-  const users = cloneUsers(getPersistedUsers());
-  const userIndex = users.findIndex((user) => user.id === updatedUser.id);
-  if (userIndex >= 0) {
-    users[userIndex] = updatedUser;
-  } else {
-    users.push(updatedUser);
-  }
-
-  localStorage.setItem(PERSISTED_USERS_KEY, JSON.stringify(users));
-  sessionStorage.setItem(AUTH_USER_KEY, JSON.stringify(updatedUser));
+  if (typeof window !== "undefined") sessionStorage.setItem(AUTH_USER_KEY, JSON.stringify(updatedUser));
   return updatedUser;
 };
 
@@ -8735,8 +8711,15 @@ export const getAuthenticatedUser = (): DefaultUser | null => {
 
   try {
     const sessionUser = JSON.parse(storedUser) as DefaultUser;
-    const persistedUser = getPersistedUsers().find((user) => user.id === sessionUser.id);
-    return persistedUser ?? sessionUser;
+    const defaultUser = getPersistedUsers().find((user) => user.id === sessionUser.id);
+    if (!defaultUser) return sessionUser;
+
+    return {
+      ...defaultUser,
+      // Les changements opérationnels restent propres à la session courante.
+      accounts: Array.isArray(sessionUser.accounts) ? sessionUser.accounts : defaultUser.accounts,
+      transactions: Array.isArray(sessionUser.transactions) ? sessionUser.transactions : defaultUser.transactions,
+    };
   } catch {
     sessionStorage.removeItem(AUTH_USER_KEY);
     sessionStorage.removeItem(AUTH_SESSION_KEY);
