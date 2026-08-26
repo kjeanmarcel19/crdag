@@ -216,10 +216,7 @@ export default function Settings() {
               title="Informations du propriétaire"
               description="Les informations personnelles du titulaire principal de ce compte."
             >
-              <div className="mb-4 flex items-start gap-2 rounded-xl border border-[#d6efec] bg-[#f1fbfa] px-3.5 py-3">
-                <Lock size={16} className="mt-0.5 shrink-0 text-[#1BA098]" />
-                <p className="text-xs leading-relaxed text-[#287a75]">Lecture seule : modifiez les informations du propriétaire directement dans <code className="rounded bg-white px-1 py-0.5 font-mono text-[11px]">defaultUsers.ts</code>.</p>
-              </div>
+              
 
               <div className="divide-y divide-gray-100">
                 <DetailRow icon={User} label="Nom complet" value={displayName} />
