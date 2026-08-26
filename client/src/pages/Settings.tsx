@@ -319,7 +319,7 @@ export default function Settings() {
                   </div>
                 ) : undefined} />
                 <DetailRow icon={Hash} label="Code banque" value={currentUser?.rib.bankCode ?? "Non renseigné"} />
-                <DetailRow icon={Hash} label="Code guichet" value={currentUser?.rib.branchCode ?? "Non renseigné"} />
+                <DetailRow icon={Hash} label="Code Agence" value={currentUser?.rib.branchCode ?? "Non renseigné"} />
                 <DetailRow icon={Hash} label="Numéro de compte" value={currentUser?.rib.accountNumber ?? "Non renseigné"} />
                 <DetailRow icon={Hash} label="Clé RIB" value={currentUser?.rib.key ?? "Non renseigné"} />
                 <DetailRow icon={Globe} label="Code SWIFT" value={currentUser?.rib.swift ?? "Non renseigné"} />

@@ -8614,7 +8614,7 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "livret-jeune",
         "type": "Livret Jeune",
         "number": "N°******6699",
-        "balance": 243000,
+        "balance": 0,
         "icon": "piggy-bank"
       }
     ],
