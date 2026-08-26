@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const formatCurrency = (value: number) =>
-  new Intl.NumberFormat("fr-MA", { style: "currency", currency: "MAD" }).format(value);
+  new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(value);
 
 const escapeHtml = (value: unknown) =>
   String(value ?? "")

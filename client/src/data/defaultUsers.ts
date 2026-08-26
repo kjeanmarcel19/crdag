@@ -8574,18 +8574,18 @@ export const DEFAULT_USERS: DefaultUser[] = [
   },
   {
     "id": "user_099",
-    "identifiant": "1000000099",
+    "identifiant": "1100250099",
     "codepersonnel": "101333",
-    "nom": "Drome",
-    "prenom": "Frederic",
+    "nom": "Gachet",
+    "prenom": "Guy Albert",
     "location": "Maroc",
-    "manager": "Claire Martin",
-    "email": "frederic.drome@exemple.ma",
-    "phone": "+212 6 12 34 56 78",
-    "address": "49 place des Alaouites, 10000 Rabat, Maroc",
-    "managerEmail": "claire.martin@exemple.ma",
-    "managerPhone": "+212 5 22 54 19 86",
-    "managerAgency": "Agence principale — Rabat Centre",
+    "manager": "Aziz Ghizlane",
+    "email": "guy.albert.gachet@gmail.com",
+    "phone": "not defined",
+    "address": "4Chemin du jura 15, 1675 Vauderens",
+    "managerEmail": "aziz.ghizlaine@creditagricole.ma",
+    "managerPhone": "not defined",
+    "managerAgency": "2 Rue Moulay Mohamed el Baâmrani Casablanca 20250, Maroc",
     "status": "Actif",
     "lastConnection": "",
     "accounts": [
@@ -8593,14 +8593,14 @@ export const DEFAULT_USERS: DefaultUser[] = [
         "id": "cc",
         "type": "Compte Courant",
         "number": "N°******2299",
-        "balance": 3500000,
+        "balance": 1955184,
         "icon": "wallet"
       },
       {
         "id": "livret",
         "type": "Livret A",
         "number": "N°******5499",
-        "balance": 50000,
+        "balance": 0,
         "icon": "piggy-bank"
       },
       {
@@ -8619,28 +8619,11 @@ export const DEFAULT_USERS: DefaultUser[] = [
       }
     ],
     "transactions": [
-      {
-        "id": 1,
-        "type": "Virement sortant",
-        "reference": "MA64000000003000400099",
-        "date": "14 Avril 2025",
-        "amount": -25000,
-        "status": "Effectué",
-        "category": "Virement"
-      },
-      {
-        "id": 2,
-        "type": "Virement entrant",
-        "reference": "MA64000000004000400099",
-        "date": "05 Mars 2025",
-        "amount": 20000,
-        "status": "Effectué",
-        "category": "Revenu"
-      }
+
     ],
     "card": {
       "number": "4973 1200 8899 2299",
-      "holder": "Élodie Morel",
+      "holder": "Guy Albert Gachet",
       "expiry": "12/27",
       "isBlocked": false,
       "foreignPayments": true,
@@ -8650,12 +8633,12 @@ export const DEFAULT_USERS: DefaultUser[] = [
     "rib": {
       "bankName": "CRÉDIT AGRICOLE DU MAROC",
       "bankCode": "225",
-      "branchCode": "01000",
-      "accountNumber": "5435012399",
-      "key": "10",
-      "iban": "MA64 2250 1000 5435012399 10",
+      "branchCode": "8100",
+      "accountNumber": "3 54044946410119",
+      "key": "16",
+      "iban": "MA64 2258 1003 54044946410119 16",
       "swift": "CNCAMAMRXXX",
-      "bankAddress": "49 place des Alaouites, 10000 Rabat, Maroc"
+      "bankAddress": "2 Rue Moulay Mohamed el Baâmrani Casablanca 20250, Maroc"
     }
   }
 ];

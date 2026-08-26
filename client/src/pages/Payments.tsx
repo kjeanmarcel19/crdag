@@ -67,7 +67,7 @@ export default function Payments() {
   const [receiptData, setReceiptData] = useState<ReceiptData | null>(null);
 
   const formatCurrency = (value: number) =>
-    new Intl.NumberFormat("fr-MA", { style: "currency", currency: "MAD" }).format(value);
+    new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(value);
 
   const resetForm = () => {
     setFirstName("");
@@ -93,7 +93,7 @@ export default function Payments() {
 
     if (!Number.isFinite(transferAmount) || transferAmount <= 0) {
       setMessageType("error");
-      setMessage("Veuillez saisir un montant supérieur à 0 MAD.");
+      setMessage("Veuillez saisir un montant supérieur à 0 EUR.");
       return;
     }
 
@@ -259,7 +259,7 @@ export default function Payments() {
                 </div>
 
                 <div>
-                  <label htmlFor="montant" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Montant (MAD)</label>
+                  <label htmlFor="montant" className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-gray-500">Montant (EUR)</label>
                   <input id="montant" type="number" required min="1" step="0.01" placeholder="Ex : 1 500.00" value={amount} onChange={(event) => setAmount(event.target.value)} className={`${inputClassName} font-bold`} />
                 </div>
 
