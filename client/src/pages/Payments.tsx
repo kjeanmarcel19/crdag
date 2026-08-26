@@ -103,12 +103,6 @@ export default function Payments() {
       return;
     }
 
-    if (transferAmount > 10000) {
-      setMessageType("error");
-      setMessage("Transaction refusée : le montant dépasse la limite autorisée.");
-      return;
-    }
-
     setIsSubmitting(true);
     setMessage("");
 

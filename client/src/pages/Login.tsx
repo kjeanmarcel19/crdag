@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Eye, EyeOff, Globe2, HelpCircle, Lock, Shield, User } from "lucide-react";
 import { useLocation } from "wouter";
-import { AUTH_SESSION_KEY, AUTH_USER_KEY, findDefaultUser } from "../data/defaultUsers";
+import { AUTH_SESSION_KEY, AUTH_USER_KEY, findDefaultUser, loadRemoteUser } from "../data/defaultUsers";
 
 function MarocLogo({ inverse = false }: { inverse?: boolean }) {
   const textColor = inverse ? "text-white" : "text-[#006b4f]";
@@ -35,24 +35,29 @@ export default function Login() {
   const [error, setError] = useState("");
   const [, setLocation] = useLocation();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!identifiant || !codePersonnel) return;
 
-    const user = findDefaultUser(identifiant.trim(), codePersonnel.trim());
-    if (!user) {
+    const baseUser = findDefaultUser(identifiant.trim(), codePersonnel.trim());
+    if (!baseUser) {
       setError("Identifiant ou code personnel incorrect.");
       return;
     }
 
     setError("");
     setIsLoading(true);
-    setTimeout(() => {
+    try {
+      const user = await loadRemoteUser(baseUser);
       sessionStorage.setItem(AUTH_SESSION_KEY, "true");
       sessionStorage.setItem(AUTH_USER_KEY, JSON.stringify(user));
-      setIsLoading(false);
       setLocation("/");
-    }, 500);
+    } catch (remoteError) {
+      console.error("Erreur Supabase lors de la connexion :", remoteError);
+      setError("Impossible de charger vos données. Vérifiez la configuration Supabase.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

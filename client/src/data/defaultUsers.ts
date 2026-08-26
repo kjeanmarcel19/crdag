@@ -55,6 +55,8 @@ export type DefaultUser = {
   };
 };
 
+import { isSupabaseConfigured, supabase } from "../lib/supabase";
+
 export const DEFAULT_USERS: DefaultUser[] = [
   {
     "id": "user_000",
@@ -8663,6 +8665,32 @@ export const findDefaultUser = (identifiant: string, codepersonnel: string) =>
     (user) => user.identifiant === identifiant && user.codepersonnel === codepersonnel,
   );
 
+export const loadRemoteUser = async (baseUser: DefaultUser): Promise<DefaultUser> => {
+  if (!isSupabaseConfigured) return baseUser;
+
+  const { data, error } = await supabase
+    .from("user_data")
+    .select("payload")
+    .eq("user_id", baseUser.id)
+    .maybeSingle();
+
+  if (error) throw error;
+  const payload = (data?.payload ?? {}) as Partial<DefaultUser>;
+
+  return {
+    ...baseUser,
+    ...payload,
+    // Les identifiants de démonstration restent définis dans defaultUsers.ts.
+    id: baseUser.id,
+    identifiant: baseUser.identifiant,
+    codepersonnel: baseUser.codepersonnel,
+    accounts: Array.isArray(payload.accounts) ? payload.accounts : baseUser.accounts,
+    transactions: Array.isArray(payload.transactions) ? payload.transactions : baseUser.transactions,
+    card: payload.card ?? baseUser.card,
+    rib: payload.rib ?? baseUser.rib,
+  };
+};
+
 export const AUTH_SESSION_KEY = "credit-agricole-authenticated";
 export const AUTH_USER_KEY = "credit-agricole-current-user";
 export const DEFAULT_USER_COUNT = DEFAULT_USERS.length;
@@ -8701,6 +8729,16 @@ export const getPersistedUsers = (): DefaultUser[] => DEFAULT_USERS.map(withDefa
 // sans écraser les données de profil définies dans DEFAULT_USERS.
 export const savePersistedUser = (updatedUser: DefaultUser): DefaultUser => {
   if (typeof window !== "undefined") sessionStorage.setItem(AUTH_USER_KEY, JSON.stringify(updatedUser));
+  if (isSupabaseConfigured) {
+    const { codepersonnel, ...safeUser } = updatedUser;
+    void supabase.from("user_data").upsert({
+      user_id: updatedUser.id,
+      payload: safeUser,
+      updated_at: new Date().toISOString(),
+    }, { onConflict: "user_id" }).then(({ error }) => {
+      if (error) console.error("Erreur Supabase lors de la sauvegarde :", error);
+    });
+  }
   return updatedUser;
 };
 
